@@ -8,8 +8,6 @@ body {
    max-height: 500px;
 }
 
-
-
 .d-block {
   min-height: 500px;
   max-height: 1000px;
@@ -21,6 +19,12 @@ body {
   flex-flow: row;
 }
 
+.flexcontainer2 {
+  margin: 0px 50px;
+  padding: 50px 50px;
+  display: flex;
+}
+
 .lobster {
   max-width: 700px;
   padding: 25px;
@@ -29,14 +33,19 @@ body {
 .welcome {
   padding: 25px;
 }
-.info
-{ max}
 
 footer {
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.dance { max-width: 500px;
-max-height: 1000px;}
-.info{padding: 25px;
+.dance {
+  max-width: 500px;
+  max-height: 1000px;
+  padding-left: 50px;
+}
+
+.info {padding: 25px;
 flex-direction: row;}
