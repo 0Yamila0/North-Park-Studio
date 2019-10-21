@@ -49,3 +49,15 @@ footer {
 
 .info {padding: 25px;
 flex-direction: row;}
+
+.navbar-toggler {
+  background-color: black;
+}
+/* Contact Page */
+.hours{ list-style-type: none;
+display: inline-block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.listh:before{ content: '🎵';}
