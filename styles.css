@@ -50,9 +50,8 @@ footer {
 .info {padding: 25px;
 flex-direction: row;}
 
-.navbar-toggler {
-  background-color: black;
-}
+
+.game{ background-color: purple;}
 /* Contact Page */
 .hours{ list-style-type: none;
 display: inline-block;
