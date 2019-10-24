@@ -67,3 +67,7 @@ margin-right: auto;
 }
 
 .listh:before{ content: '🎵';}
+
+.welcome{background-color:#D6E5E2;
+font-family: 'Nunito', sans-serif;
+}
