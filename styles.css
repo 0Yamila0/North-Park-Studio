@@ -9,6 +9,14 @@ body {
   max-height: 500px;
 }
 
+.navbar {
+  background-color: black;
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
 /* carousel */
 .d-block {
   min-height: 500px;
