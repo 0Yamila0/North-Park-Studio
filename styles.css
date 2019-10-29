@@ -22,6 +22,15 @@ body {
 
 .nav-link:hover {color: #4DC3ff;}
 
+@keyframes example { from { background-color:black;}
+to {background-color: #4DC3ff;}
+}
+.navbar {
+  animation-name: example;
+  animation-duration: 5s;}
+.navbar-toggler{ color: white;}
+
+
 /* carousel */
 .d-block {
   min-height: 500px;
@@ -39,7 +48,6 @@ body {
   padding: 50px 50px;
   display: flex;
 }
-
 
 
 /* footer */
@@ -89,7 +97,7 @@ footer {
   margin-right: auto;
 }
 
-.listh:before{ content: '🎵';}
+.listh:before{ content: '♪';}
 
 .welcome{background-color:#D6E5E2;
 font-family: 'Nunito', sans-serif;
