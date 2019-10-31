@@ -20,16 +20,28 @@ body {
   color: white;
 }
 
-.nav-link:hover {color: #4DC3ff;}
+.nav-link:hover {
+  color: #4DC3ff;
+}
 
 @keyframes example { from { background-color:black;}
 to {background-color: #4DC3ff;}
 }
+
 .navbar {
   animation-name: example;
-  animation-duration: 5s;}
-.navbar-toggler{ color: white;}
+  animation-duration: 5s;
+}
 
+.navbar-toggler{
+  color: white;
+}
+
+.card-body {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
 
 /* carousel */
 .d-block {
@@ -99,6 +111,16 @@ table {
   border-style: solid;
   padding: 10px;
   display: inline-table;
+}
+
+/* vocal page */
+.vcontent {
+  margin: 0px 50px;
+}
+
+/* Theater arts page*/
+.tcontent {
+  margin: 0px 50px;
 }
 
 /* Contact Page */
