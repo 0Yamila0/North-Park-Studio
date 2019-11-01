@@ -13,9 +13,6 @@ body {
   background-color: black;
 }
 
-.navbar-toggler {
-  border-color: white;
-}
 .nav-link {
   color: white;
 }
@@ -33,15 +30,10 @@ to {background-color: #4DC3ff;}
   animation-duration: 5s;
 }
 
-.navbar-toggler{
-  color: white;
-}
+.navbar-toggler-icon {
+color: white;}
 
-.card-body {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-}
+
 
 /* carousel */
 .d-block {
@@ -91,6 +83,11 @@ footer {
 }
 .welcome{background-color:#D6E5E2;
 font-family: 'Nunito', sans-serif;
+}
+.card-body {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
 }
 
 
