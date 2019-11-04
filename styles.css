@@ -18,7 +18,7 @@ body {
 }
 
 .nav-link:hover {
-  color: #4DC3ff;
+  color: #36b6f7;
 }
 
 @keyframes example { from { background-color:black;}
@@ -127,12 +127,16 @@ table {
   margin: 0px 50px;
 }
 
+/* Summer Camps page */
+
+
 /* Contact Page */
+.listh:before{ content: '♪';
+list-style-type: left;}
+
 .hours {
   list-style-type: none;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-.listh:before{ content: '♪';}
+
+}
+.listh{justify-content: center;}
