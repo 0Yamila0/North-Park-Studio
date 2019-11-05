@@ -84,10 +84,25 @@ footer {
 .welcome{background-color:#D6E5E2;
 font-family: 'Nunito', sans-serif;
 }
+.flexcontainer2{font-family: 'Nunito',
+ sans-serif;
+
+}
+.card{
+background-color:#DCDCDC;
+font-family: 'Nunito', sans-serif;
+
+}
+
+.card-img-top{
+  border-style:solid;
+}
+
 .card-body {
   display: flex;
   flex-flow: row;
   justify-content: space-around;
+
 }
 
 
