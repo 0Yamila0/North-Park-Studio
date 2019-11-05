@@ -101,15 +101,13 @@ font-family: 'Nunito', sans-serif;
 
 /* Piano Page */
 .pp1 {
-  margin: 0px 50px 0px 50px;
+  margin: 0px 50p;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
-.pcost {
-  text-align: center;
-}
+
 
 table {
   border-style: solid;
