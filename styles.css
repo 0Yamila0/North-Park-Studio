@@ -121,7 +121,9 @@ font-family: 'Nunito', sans-serif;
   justify-content: center;
 }
 
-
+.p24 {
+  padding: 10px 10px;
+}
 
 table {
   border-style: solid;
