@@ -42,15 +42,18 @@ color: white;}
 }
 
 .flexcontainer {
-  margin: 0px 50px;
+  margin: 0px 25px;
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .flexcontainer2 {
   margin: 0px 50px;
   padding: 50px 50px;
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 
@@ -63,13 +66,8 @@ footer {
 }
 
 /* home Page */
-.dance {
-  max-width: 500px;
-  max-height: 1000px;
-  padding-left: 50px;
-}
 .lobster {
-  max-width: 700px;
+  max-width: 600px;
   padding: 25px;
 }
 
@@ -77,10 +75,20 @@ footer {
   padding: 25px;
 }
 
+.ourstudio{
+
+}
+
+.dance {
+  max-width: 500px;
+  max-height: 1000px;
+}
+
 .info {
   padding: 25px;
   flex-direction: row;
 }
+
 .welcome{background-color:#D6E5E2;
 font-family: 'Nunito', sans-serif;
 }
@@ -100,24 +108,20 @@ font-family: 'Nunito', sans-serif;
 
 .card-body {
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   justify-content: space-around;
 
 }
 
-
 /* Piano Page */
 .pp1 {
-  margin: 0px 50px 0px 50px;
+  margin: 0px 50p;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
-.pcost {
-  text-align: center;
-}
+
 
 table {
   border-style: solid;
