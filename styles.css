@@ -92,16 +92,30 @@ footer {
 .welcome{background-color:#D6E5E2;
 font-family: 'Nunito', sans-serif;
 }
+.flexcontainer2{font-family: 'Nunito',
+ sans-serif;
+
+}
+.card{
+background-color:#DCDCDC;
+font-family: 'Nunito', sans-serif;
+
+}
+
+.card-img-top{
+  border-style:solid;
+}
 
 .card-body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+
 }
 
 /* Piano Page */
 .pp1 {
-  margin: 0px 50p;
+  margin: 0% 10%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -120,6 +134,22 @@ table {
   margin: 0px 50px;
 }
 
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.sing {
+  padding: 10px 10px;
+  max-width: 400px;
+  flex-grow: 300px;
+}
+
+.yes {
+  flex-grow: 300px;
+}
+
 /* Theater arts page*/
 .tcontent {
   margin: 0px 50px;
@@ -129,12 +159,15 @@ table {
 
 
 /* Contact Page */
-.listh:before{ content: '♪';
-list-style-type: left;}
+.listh:before{
+  content: '♪';
+  list-style-type: left;
+}
 
 .hours {
   list-style-type: none;
-
-
 }
-.listh{justify-content: center;}
+
+.listh{
+  justify-content: center;
+}
