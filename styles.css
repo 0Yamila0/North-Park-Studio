@@ -3,6 +3,14 @@ body {
   text-align: center;
 }
 
+footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 /* navbar */
 .logo {
   max-width: 150px;
@@ -11,6 +19,8 @@ body {
 
 .navbar {
   background-color: black;
+  animation-name: example;
+  animation-duration: 5s;
 }
 
 .nav-link {
@@ -25,14 +35,9 @@ body {
 to {background-color: #4DC3ff;}
 }
 
-.navbar {
-  animation-name: example;
-  animation-duration: 5s;
-}
-
 .navbar-toggler-icon {
-color: white;}
-
+  color: white;
+}
 
 
 /* carousel */
@@ -41,6 +46,8 @@ color: white;}
   max-height: 1000px;
 }
 
+
+/* home Page */
 .flexcontainer {
   margin: 0px 25px;
   display: flex;
@@ -51,21 +58,12 @@ color: white;}
 .flexcontainer2 {
   margin: 0px 50px;
   padding: 50px 50px;
+  font-family: 'Nunito', sans-serif;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
-
-/* footer */
-footer {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* home Page */
 .lobster {
   max-width: 600px;
   padding: 25px;
@@ -73,10 +71,8 @@ footer {
 
 .welcome {
   padding: 25px;
-}
-
-.ourstudio{
-
+  background-color:#D6E5E2;
+  font-family: 'Nunito', sans-serif;
 }
 
 .dance {
@@ -89,20 +85,12 @@ footer {
   flex-direction: row;
 }
 
-.welcome{background-color:#D6E5E2;
-font-family: 'Nunito', sans-serif;
-}
-.flexcontainer2{font-family: 'Nunito',
- sans-serif;
-
-}
-.card{
+.card {
 background-color:#DCDCDC;
 font-family: 'Nunito', sans-serif;
-
 }
 
-.card-img-top{
+.card-img-top {
   border-style:solid;
 }
 
@@ -110,22 +98,13 @@ font-family: 'Nunito', sans-serif;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-
 }
 
 /* Piano Page */
-.pp1 {
-
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-
 .p24 {
+  max-width: 400px;
   padding: 10px 10px;
- display: flex;
- flex-flow: row wrap;
- justify-content: center;}
+}
 
 table {
   border-style: solid;
@@ -134,10 +113,6 @@ table {
 }
 
 /* vocal page */
-.vcontent {
-  margin: 0px 50px;
-}
-
 .container {
   display: flex;
   flex-flow: row wrap;
@@ -155,9 +130,6 @@ table {
 }
 
 /* Theater arts page*/
-.tcontent {
-  margin: 0px 50px;
-}
 
 /* Summer Camps page */
 
