@@ -2,24 +2,65 @@
 body {
   text-align: center;
 }
+/* start of bounce out animation */
+@import "compass/css3";
 
-footer {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Variables */
+$bounce-color: #f66;
+$image-size: 200px;
+
+/* Styles */
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+body, html {
+	background: WhiteSmoke;
+	font-family: 'Ubuntu', sans-serif;
+	color: #0f383e;
+	text-align: center;
+
+	h1 {
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	p {
+		font-size: 0.95rem;
+  }
+
+	.holder {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-left: -110px;
+		margin-top: -185px;
+
+		.avatar {
+			margin: 25px auto;
+
+			img.user {
+				height: $image-size;
+				width: $image-size;
+				background-color: $bounce-color ;
+				box-shadow: 0 0 0 5px $bounce-color ;
+				border-radius: 50%;
+
+				&:hover {
+					cursor: pointer;
+					animation:bounceOut .4s linear;
+				}
+			}
+		}
+	}
 }
 
-.facebook {
-  max-width: 50px;
-  padding-bottom: 20px;
+@keyframes bounceOut {
+        0%{ box-shadow: 0 0 0 4px $bounce-color; opacity:1;}
+        25%{ box-shadow: 0 0 0 1px $bounce-color; opacity:1;}
+        50%{ box-shadow: 0 0 0 7px $bounce-color; opacity:1; }
+        75%{ box-shadow: 0 0 0 4px $bounce-color; opacity:1;}
+        100%{ box-shadow: 0 0 0 5px $bounce-color; opacity:1;}
 }
-
-.container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
+/* end of bounce out animation  */
 
 /* navbar */
 .logo {
@@ -29,8 +70,6 @@ footer {
 
 .navbar {
   background-color: black;
-  animation-name: example;
-  animation-duration: 5s;
 }
 
 .nav-link {
@@ -45,9 +84,14 @@ footer {
 to {background-color: #4DC3ff;}
 }
 
-.navbar-toggler-icon {
-  color: white;
+.navbar {
+  animation-name: example;
+  animation-duration: 5s;
 }
+
+.navbar-toggler-icon {
+color: white;}
+
 
 
 /* carousel */
@@ -56,8 +100,6 @@ to {background-color: #4DC3ff;}
   max-height: 1000px;
 }
 
-
-/* home Page */
 .flexcontainer {
   margin: 0px 25px;
   display: flex;
@@ -68,12 +110,21 @@ to {background-color: #4DC3ff;}
 .flexcontainer2 {
   margin: 0px 50px;
   padding: 50px 50px;
-  font-family: 'Nunito', sans-serif;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
+
+/* footer */
+footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* home Page */
 .lobster {
   max-width: 600px;
   padding: 25px;
@@ -81,8 +132,10 @@ to {background-color: #4DC3ff;}
 
 .welcome {
   padding: 25px;
-  background-color:#D6E5E2;
-  font-family: 'Nunito', sans-serif;
+}
+
+.ourstudio{
+
 }
 
 .dance {
@@ -95,12 +148,20 @@ to {background-color: #4DC3ff;}
   flex-direction: row;
 }
 
-.card {
-background-color:#f2f2f2;
+.welcome{background-color:#D6E5E2;
 font-family: 'Nunito', sans-serif;
 }
+.flexcontainer2{font-family: 'Nunito',
+ sans-serif;
 
-.card-img-top {
+}
+.card{
+background-color:#DCDCDC;
+font-family: 'Nunito', sans-serif;
+
+}
+
+.card-img-top{
   border-style:solid;
 }
 
@@ -108,6 +169,7 @@ font-family: 'Nunito', sans-serif;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+
 }
 
 .card-header{
@@ -124,6 +186,13 @@ font-family: 'Nunito', sans-serif;
 }
 
 /* Piano Page */
+.pp1 {
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
 .p24 {
   padding: 30px 30px;
 }
@@ -135,6 +204,16 @@ table {
 }
 
 /* vocal page */
+.vcontent {
+  margin: 0px 50px;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
 .sing {
   padding: 10px 10px;
   max-width: 400px;
