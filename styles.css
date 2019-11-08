@@ -10,6 +10,16 @@ footer {
   align-items: center;
 }
 
+.facebook {
+  max-width: 50px;
+  padding-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
 
 /* navbar */
 .logo {
@@ -86,7 +96,7 @@ to {background-color: #4DC3ff;}
 }
 
 .card {
-background-color:#DCDCDC;
+background-color:#f2f2f2;
 font-family: 'Nunito', sans-serif;
 }
 
@@ -100,10 +110,22 @@ font-family: 'Nunito', sans-serif;
   justify-content: space-around;
 }
 
+.card-header{
+  background-color: black;
+}
+
+.btn-link {
+  color: white;
+  background-color: black;
+}
+
+.btn-link:hover {
+  color: #ffa200;
+}
+
 /* Piano Page */
 .p24 {
-  max-width: 400px;
-  padding: 10px 10px;
+  padding: 30px 30px;
 }
 
 table {
@@ -113,25 +135,26 @@ table {
 }
 
 /* vocal page */
-.container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-
 .sing {
   padding: 10px 10px;
   max-width: 400px;
   flex-grow: 300px;
 }
 
-.yes {
-  flex-grow: 300px;
+.nextto {
+  padding: 30px 30px;
 }
 
 /* Theater arts page*/
+.hands {
+  padding: 30px 30px;
+}
+
 
 /* Summer Camps page */
+.acts {
+  padding: 30px 30px;
+}
 
 
 /* Contact Page */
