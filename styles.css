@@ -2,6 +2,11 @@
 body {
   text-align: center;
 }
+
+.facebook {
+  padding-bottom: 20px;
+  max-width: 50px;
+}
 /* start of bounce out animation */
 @import "compass/css3";
 
@@ -182,7 +187,7 @@ font-family: 'Nunito', sans-serif;
 }
 
 .btn-link:hover {
-  color: #ffa200;
+  color: #36b6f7;
 }
 
 /* Piano Page */
