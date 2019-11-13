@@ -11,37 +11,28 @@
     <title>Hello, world!</title>
   </head>
   <body>
+    <header>
+      <h1> North Park Studios </h1>
+      <p> a wonderful place for all ages to enjot the fine arts </p>
+    </header>
 
     <!-- start of navbar -->
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="index.html"> <img class="logo" src="Media/Logo.jpg"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon">♪♪♪</span>
+    <nav id="sticky_nav">
+      <div class="container_left">
+      <a class="home" href="index.html" target="blank_">
+        <i class="fa fa-home"> </i>
+      </a>
+      <button id="btnMenu" onclick="openMenu()">
+        <i class="fa fa-close"> </i>
       </button>
+    </div>
+    <div class="container_menu"
+        id="thisMenu">
+        <div class="container_list">
+          <button class="btnList" onclick="openList('1')">
+            <span class="drop">Home</span>
+            
 
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Piano.html">Piano</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="vocal.html">Vocal</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="theater_arts.html">Theater Arts</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="summer_camps.html">Summer Camps</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
     </nav>
     <!-- end of navbar -->
 
