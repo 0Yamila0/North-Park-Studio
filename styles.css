@@ -7,65 +7,8 @@ body {
   padding-bottom: 20px;
   max-width: 50px;
 }
-/* start of bounce out animation */
-@import "compass/css3";
 
-/* Variables */
-$bounce-color: #f66;
-$image-size: 200px;
 
-/* Styles */
-@import url(https://fonts.googleapis.com/css?family=Ubuntu);
-
-body, html {
-	background: WhiteSmoke;
-	font-family: 'Ubuntu', sans-serif;
-	color: #0f383e;
-	text-align: center;
-
-	h1 {
-		font-size: 1.2rem;
-		font-weight: bold;
-	}
-
-	p {
-		font-size: 0.95rem;
-  }
-
-	.holder {
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		margin-left: -110px;
-		margin-top: -185px;
-
-		.avatar {
-			margin: 25px auto;
-
-			img.user {
-				height: $image-size;
-				width: $image-size;
-				background-color: $bounce-color ;
-				box-shadow: 0 0 0 5px $bounce-color ;
-				border-radius: 50%;
-
-				&:hover {
-					cursor: pointer;
-					animation:bounceOut .4s linear;
-				}
-			}
-		}
-	}
-}
-
-@keyframes bounceOut {
-        0%{ box-shadow: 0 0 0 4px $bounce-color; opacity:1;}
-        25%{ box-shadow: 0 0 0 1px $bounce-color; opacity:1;}
-        50%{ box-shadow: 0 0 0 7px $bounce-color; opacity:1; }
-        75%{ box-shadow: 0 0 0 4px $bounce-color; opacity:1;}
-        100%{ box-shadow: 0 0 0 5px $bounce-color; opacity:1;}
-}
-/* end of bounce out animation  */
 
 /* navbar */
 .logo {
@@ -245,18 +188,20 @@ table {
 
 
 /* Contact Page */
-.listh:before{
-  content: '♪';
-  list-style-type: left;
+.ccontent {
+  margin: 0px 50px;
 }
 
 .hours {
-  list-style-type: none;
+  list-style-image: url(Media/eighthnote1.png);
+  list-style-position: inside;
+  padding: 0px 350px;
 }
 
-.listh{
-  justify-content: center;
+.map {
+  padding: 20px 20px;
 }
+
 @media {
 
 }
