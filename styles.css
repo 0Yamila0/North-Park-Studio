@@ -185,18 +185,20 @@ table {
 
 
 /* Contact Page */
-.listh:before{
-  content: '♪';
-  list-style-type: left;
+.ccontent {
+  margin: 0px 50px;
 }
 
 .hours {
-  list-style-type: none;
+  list-style-image: url(Media/eighthnote1.png);
+  list-style-position: inside;
+  padding: 0px 350px;
 }
 
-.listh{
-  justify-content: center;
+.map {
+  padding: 20px 20px;
 }
+
 @media {
 
 }
