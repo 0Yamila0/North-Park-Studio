@@ -118,6 +118,7 @@ color: white;}
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  text-align: justify;
 }
 
 
@@ -137,11 +138,13 @@ footer {
 
 .welcome {
   padding: 25px;
+  text-align: justify;
 }
 
 .ourstudio{
 
 }
+.h1 {text-align: center;}
 
 .dance {
   max-width: 500px;
@@ -153,7 +156,7 @@ footer {
   flex-direction: row;
 }
 
-.welcome{background-color:#D6E5E2;
+.welcome{
 font-family: 'Nunito', sans-serif;
 }
 .flexcontainer2{font-family: 'Nunito',
