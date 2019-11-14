@@ -53,6 +53,9 @@ color: white;}
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+
+
+  font-family: 'Roboto', sans-serif;
 }
 
 .flexcontainer2 {
@@ -62,6 +65,7 @@ color: white;}
   flex-flow: row wrap;
   justify-content: center;
   text-align: justify;
+  font-family: 'Raleway', sans-serif;
 }
 
 
@@ -82,11 +86,17 @@ footer {
 .welcome {
   padding: 25px;
   text-align: justify;
+  font-family: 'Raleway', sans-serif;
 }
 
 .ourstudio{
 
 }
+.row {text-align: justify;}
+.rowvcontent{text-align: justify;
+  font-family: 'Raleway', sans-serif;
+}
+
 .h1 {text-align: center;}
 
 .dance {
