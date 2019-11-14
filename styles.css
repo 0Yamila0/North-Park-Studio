@@ -8,8 +8,6 @@ body {
   max-width: 50px;
 }
 
-
-
 /* navbar */
 .logo {
   max-width: 150px;
@@ -28,8 +26,14 @@ body {
   color: #36b6f7;
 }
 
-@keyframes example { from { background-color:black;}
-to {background-color: #4DC3ff;}
+@keyframes example {
+  from {
+    background-color: black;
+  }
+
+  to {
+    background-color: #4DC3ff;
+  }
 }
 
 .navbar {
@@ -38,9 +42,8 @@ to {background-color: #4DC3ff;}
 }
 
 .navbar-toggler-icon {
-color: white;}
-
-
+  color: white;
+}
 
 /* carousel */
 .d-block {
@@ -64,7 +67,6 @@ color: white;}
   text-align: justify;
 }
 
-
 /* footer */
 footer {
   background-color: black;
@@ -84,10 +86,9 @@ footer {
   text-align: justify;
 }
 
-.ourstudio{
-
+.h1 {
+  text-align: center;
 }
-.h1 {text-align: center;}
 
 .dance {
   max-width: 500px;
@@ -99,31 +100,31 @@ footer {
   flex-direction: row;
 }
 
-.welcome{
-font-family: 'Nunito', sans-serif;
-}
-.flexcontainer2{font-family: 'Nunito',
- sans-serif;
-
-}
-.card{
-background-color:#DCDCDC;
-font-family: 'Nunito', sans-serif;
-
+.welcome {
+  font-family: 'Nunito', sans-serif;
 }
 
-.card-img-top{
-  border-style:solid;
+.flexcontainer2 {
+  font-family: 'Nunito',
+    sans-serif;
+}
+
+.card {
+  background-color: #DCDCDC;
+  font-family: 'Nunito', sans-serif;
+}
+
+.card-img-top {
+  border-style: solid;
 }
 
 .card-body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-
 }
 
-.card-header{
+.card-header {
   background-color: black;
 }
 
@@ -138,7 +139,6 @@ font-family: 'Nunito', sans-serif;
 
 /* Piano Page */
 .pp1 {
-
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -180,28 +180,46 @@ table {
   padding: 30px 30px;
 }
 
-
 /* Summer Camps page */
-.acts {
+.pic4intro, .intro4sum {
   padding: 30px 30px;
 }
 
+.sccontent {
+  padding: 10px 10px;
+}
+
+.theory {
+}
+
+.acts {
+  padding: 30px 30px;
+}
 
 /* Contact Page */
 .ccontent {
   margin: 0px 50px;
 }
 
+hr {
+  background-color: #36b6f7;
+}
+
 .hours {
   list-style-image: url(Media/eighthnote1.png);
-  list-style-position: inside;
-  padding: 0px 350px;
+  display: inline-block;
+  text-align: left;
+}
+
+.time {
+  text-align: center;
 }
 
 .map {
   padding: 20px 20px;
 }
 
-@media {
-
+.thespecialchild {
 }
+
+@media {}
