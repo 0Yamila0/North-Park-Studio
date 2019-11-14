@@ -7,35 +7,128 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles2.css">
+<link rel="JavaScript" href="html.JS">
     <title>Hello, world!</title>
   </head>
   <body>
     <header>
-      <h1> North Park Studios </h1>
-      <p> a wonderful place for all ages to enjot the fine arts </p>
-    </header>
+	<h1>LOGO</h1>
+	<p>Description</p>
+</header>
+<nav id="sticky_nav">
+	<div class="container_left">
+		<a class="home" href="https://codepen.io/uzcho_/" target="blank_">
+			<i class="fa fa-home"></i>
+		</a>
+		<button id="btnMenu" onclick="openMenu()">
+			<i class="fa fa-bars"></i>
+			<i class="fa fa-close"></i>
+		</button>
+	</div>
+	<div class="container_menu" id="thisMenu">
+		<div class="container_list">
+			<button class="btnList" onclick="openList('1')">
+				<span class="drop">Dropdown 1</span>
+				<span class="acc">Accordion 1</span>
+			</button>
+			<div class="content_list left" id="thisList_1">
+				<p>1<br>Lorem ipsum<br>Lorem ipsum<br>Lorem ipsum</p>
+			</div>
+		</div>
+		<div class="container_list">
+			<button class="btnList" onclick="openList('2')">
+				<span class="drop">Dropdown 2</span>
+				<span class="acc">Accordion 2</span>
+			</button>
+			<div class="content_list left" id="thisList_2">
+				<p>2<br>Lorem ipsum<br>Lorem ipsum<br>Lorem ipsum</p>
+			</div>
+		</div>
+		<div class="container_list">
+			<button class="btnList" onclick="openList('3')">
+				<span class="drop">Dropdown 3</span>
+				<span class="acc">Accordion 3</span>
+			</button>
+			<div class="content_list center" id="thisList_3">
+				<p>3<br>Lorem ipsum<br>Lorem ipsum<br>Lorem ipsum</p>
+			</div>
+		</div>
+		<div class="container_list">
+			<button class="btnList" onclick="openList('4')">
+				<span class="drop">Dropdown 4</span>
+				<span class="acc">Accordion 4</span>
+			</button>
+			<div class="content_list right" id="thisList_4">
+				<p>4<br>Lorem ipsum<br>Lorem ipsum<br>Lorem ipsum</p>
+			</div>
+		</div>
+		<div class="container_list">
+			<button class="btnList" onclick="openList('5')">
+				<span class="drop">Dropdown 5</span>
+				<span class="acc">Accordion 5</span>
+			</button>
+			<div class="content_list right" id="thisList_5">
+				<p>5<br>Lorem ipsum<br>Lorem ipsum<br>Lorem ipsum</p>
+			</div>
+		</div>
+	</div>
+	<div class="container_right">
+		<div class="content_search" id="thisSearch">
+			<form><input type="text" placeholder="Search..."></form>
+		</div>
+		<button id="btnSearch" onclick="openSearch()">
+			<i class="fa fa-search"></i>
+			<i class="fa fa-close"></i>
+		</button>
+	</div>
+</nav>
+<div class="title">
+	<h2>Responsive Slide Down A Sticky Navbar On Scroll</h2>
+</div>
+<div class="blank"></div>
 
-    <!-- start of navbar -->
-    <nav id="sticky_nav">
-      <div class="container_left">
-      <a class="home" href="index.html" target="blank_">
-        <i class="fa fa-home"> </i>
-      </a>
-      <button id="btnMenu" onclick="openMenu()">
-        <i class="fa fa-close"> </i>
-      </button>
-    </div>
-    <div class="container_menu"
-        id="thisMenu">
-        <div class="container_list">
-          <button class="btnList" onclick="openList('1')">
-            <span class="drop">Home</span>
-            <span
+<!-- This is not part of Pen -->
+<a class="me" href="https://codepen.io/uzcho_/pens/popular/?grid_type=list" target="_blank" style="color:#fff"></a>
 
-    </nav>
-    <!-- end of navbar -->
+<script>
+window.onscroll = function(){
+   scrollFunction()
+}
+function scrollFunction(){
+   var sn = document.getElementById("sticky_nav");
+      if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+         sn.style.top = "0"
+      }
+      else{
+         sn.style.top = "-45px"
+      }
+}
 
+function openList(x){
+   var cL = document.getElementsByClassName("content_list");
+   var i;
+      for(i = 0; i < cL.length; i++){
+         var OcL = cL[i];
+            if(cL[i] != document.getElementById("thisList_" + x)){
+               OcL.classList.remove("show_list")
+            }
+      }
+   document.getElementById("thisList_" + x).classList.toggle("show_list")
+}
+
+function openSearch(){
+   document.getElementById("thisSearch").classList.toggle("show_search");
+   document.getElementById("btnSearch").getElementsByTagName("i")[0].classList.toggle("hidden");
+   document.getElementById("btnSearch").getElementsByTagName("i")[1].classList.toggle("visible")
+}
+
+function openMenu(){
+   document.getElementById("thisMenu").classList.toggle("show_menu");
+   document.getElementById("btnMenu").getElementsByTagName("i")[0].classList.toggle("hidden");
+   document.getElementById("btnMenu").getElementsByTagName("i")[1].classList.toggle("visible")
+}
+</script>
     <!-- Start of carousel -->
     <div class="bd-example">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
