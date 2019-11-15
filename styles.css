@@ -100,7 +100,8 @@ footer {
 }
 
 .h1 {text-align: center;}
-
+.prices{text-align: center;}
+.heading{text-align: center;}
 .dance {
   max-width: 500px;
   max-height: 1000px;
@@ -128,6 +129,7 @@ footer {
 .card-img-top {
   border-style: solid;
 }
+
 
 .card-body {
   display: flex;
