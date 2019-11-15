@@ -56,8 +56,6 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-
-
   font-family: 'Roboto', sans-serif;
 }
 
@@ -94,14 +92,24 @@ footer {
 .h1 {
   text-align: center;
 }
-.row {text-align: justify;}
-.rowvcontent{text-align: justify;
+
+.row {
+  text-align: justify;
+}
+
+.rowvcontent {
+  text-align: justify;
   font-family: 'Raleway', sans-serif;
 }
 
-.h1 {text-align: center;}
-.prices{text-align: center;}
-.heading{text-align: center;}
+.h1 {
+  text-align: center;
+}
+
+.prices {
+  text-align: center;
+}
+
 .dance {
   max-width: 500px;
   max-height: 1000px;
@@ -129,7 +137,6 @@ footer {
 .card-img-top {
   border-style: solid;
 }
-
 
 .card-body {
   display: flex;
@@ -202,8 +209,7 @@ table {
   padding: 10px 10px;
 }
 
-.theory {
-}
+.theory {}
 
 .acts {
   padding: 30px 30px;
@@ -232,7 +238,6 @@ hr {
   padding: 20px 20px;
 }
 
-.thespecialchild {
-}
+.thespecialchild {}
 
 @media {}
