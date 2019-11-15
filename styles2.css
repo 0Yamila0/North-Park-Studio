@@ -7,53 +7,45 @@ body {
   padding-bottom: 20px;
   max-width: 50px;
 }
-a{display:block}
-
-
+a {display:block;}
+body{background:white;text-align:center;}
 body,button
-	{font-family:Tahoma,Geneva,sans-serif;font-style:normal;font-weight:400}
-
-button
-	{margin:0;border:none;cursor:pointer}
-
-button:focus
-	{background:#808080;color:#000}
-
-button,p,.home
-	{font-size:14px}
-
-button,
+	{font-family:Tahoma,Geneva,sans-serif;font-style:normal;font-weight:400;}
+  button
+  	{margin:0;border:none;cursor:pointer;}
+    button:focus
+	{background:#808080;color:#000;}
+  button,p,.home
+	{font-size:14px;}
+  button,
 .home{
 	background:transparent;
 	padding:14px;
 	color:#a3a3a3;
-	vertical-align:middle
+	vertical-align:middle;
 	}
-
-button:hover,.home:hover
-	{background:#4d4d4d;color:#fff}
-
-h1,h2{font-size:30px}
-
-h1,p
-	{margin:0;padding:0}
-
+  button:hover,.home:hover
+	{background:#4d4d4d;color:#fff;}
+  h1,h2{font-size:30px}
+  h1,p
+  	{margin:0;padding:0}
 [class*="container"]
-	{display:block;position:relative;float:left}
+{display:block;position:relative;float:left;}
+
 
 [class*="content"]
-	{display:none;position:absolute;z-index:10}
+/* added the line below and the search bar completely disappeared */
+{display:none;position:absolute;z-index:10}
 
 .home,#btnMenu
-	{position:relative;float:left}
+	{position:relative;float:left;}
+  #btnMenu,.fa-close,.acc
+  	{display:none;}
 
-#btnMenu,.fa-close,.acc
-	{display:none}
-
-.content_list:before,
-h2:before,
-h2:after
-	{content:"";display:block;position:absolute}
+    .content_list:before,
+    h2:before,
+    h2:after
+{content:"";display:block;position:absolute;}
 
 header{
 	width:100%;
@@ -61,96 +53,83 @@ header{
 	display:block;
 	position:absolute;
 	z-index:10;
-	box-shadow:0 8px 6px -6px #000
+
 	}
-
-header h1,header p
-	{letter-spacing:5px;text-shadow:-1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff}
-
-#sticky_nav{
-	background:#000;
-	width:100%;
-	top:-45px;
-	display:block;
-	position:fixed;
-	z-index:999;
-	transition:all .5s ease
-	}
-
-.btnList{width:120px}
-
+  header h1,header p
+  	{letter-spacing:5px;text-shadow:-1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff}
+/* made the black part go smaller and the words disappeared */
+    #sticky_nav{
+    	background:#000;
+    	width:100%;
+    	top:-45px;
+    	display:block;
+    	position:fixed;
+    	z-index:999;
+    	transition:all .5s ease
+    	}
+.btnList{width:120px;}
 .content_list
-	{background:#fff;width:250px;top:45px}
+	{background:#fff;width:250px;top:45px;}
 
-.content_list.left,
-.content_list.left:before
-	{left:0}
-
-.content_list.center{left:-65px}
-
+  .content_list.left,
+  .content_list.left:before
+  	{left:0}
+.content_list.center{left:-65px;}
 .content_list.center:before
 	{left:50%;transform:translate(-50%,0)}
-
-.content_list.right,
+  .content_list.right,
 .content_list.right:before
 	{right:0}
+  .content_list:before{
+  	width:8px;
+  	top:-8px;
+  	border-left:8px solid transparent;
+  	border-right:8px solid transparent;
+  	border-bottom:8px solid #fff;
+  	}
 
-.content_list:before{
-	width:8px;
-	top:-8px;
-	border-left:8px solid transparent;
-	border-right:8px solid transparent;
-	border-bottom:8px solid #fff
-	}
 
-.container_right{float:right}
 
-.content_search
-	{background:#000;top:0;right:40px}
-
-input[type=text]{
-	background:#fff;
-	width:100%;
-	font-size:22px;
-	border-radius:5px
-	}
-
+/* below changes the alignment of the pictures under testimonials and changes the footer from black to grey-ish */
 @media (max-width:683px){
 	#btnMenu{display:block}
 	.container_menu{display:none}
 	.container_list{width:100%}
+  /* ends */
 
-	.btnList
-		{width:100%;box-shadow:0 2px 2px -2px #333}
+  .btnList
+  		{width:100%;box-shadow:0 2px 2px -2px #333}
 
-	.drop{display:none}
-	.acc{display:inline-block}
+      .drop{display:none}
+      	.acc{display:inline-block}
 
-	.content_list{
-		width:100%;
-		top:0;
-		position:relative;
-		float:left
-		}
+        .content_list{
+        		width:100%;
+        		top:0;
+        		position:relative;
+        		float:left
+        		}
+            .content_list.left,
+            	.content_list.center,
+            	.content_list.right
+            		{left:0;right:0}
 
-	.content_list.left,
-	.content_list.center,
-	.content_list.right
-		{left:0;right:0}
-
-	.content_list.left:before,
+                .content_list.left:before,
 	.content_list.center:before,
 	.content_list.right:before
-		{left:50%;transform:translate(-50%,0)}
 
-	.show_menu{
-		background:#1a1a1a;
+{left:50%;transform:translate(-50%,0)}
+
+/* this changed the pictures and footer normal again */
+.show_menu{
+
 		width:100%;
 		top:45px;
 		display:block;
 		position:absolute
 		}
 	}
+/* ends */
 
 .title,.blank{
 	width:100%;
@@ -159,18 +138,19 @@ input[type=text]{
 	position:relative;
 	float:left
 	}
-
-h2{
-	width:100%;
-	top:50%;
-	left:0;
-	margin:0;
-	padding:0 8px;
-	display:block;
-	position:absolute;
-	color:#fff;
-	transform:translate(0,-50%)
-	}
+/* makes the small grey bar disappear, and now onlt the "logo and Description" is left */
+  h2{
+  	width:100%;
+  	top:50%;
+  	left:0;
+  	margin:0;
+  	padding:0 8px;
+  	display:block;
+  	position:absolute;
+  	color:#fff;
+  	transform:translate(0,-50%)
+  	}
+/* ends */
 
 h2:before,h2:after{
 	width:50px;
@@ -181,225 +161,25 @@ h2:before,h2:after{
 	animation:buble 1s linear infinite alternate
 	}
 
-h2:before{bottom:-100px}
-h2:after{bottom:-110px}
+  h2:before{bottom:-100px}
+  h2:after{bottom:-110px}
 
-@keyframes buble{
-	from{transform:rotate(45deg) translate(-50%,0) scale(.8,.8)}
-	to{transform:rotate(45deg) translate(-50%,0) scale(1,1)}
-	}
-
+  @keyframes buble{
+  	from{transform:rotate(45deg) translate(-50%,0) scale(.8,.8)}
+  	to{transform:rotate(45deg) translate(-50%,0) scale(1,1)}
+  	}
 .blank{background:#262626}
+/* this makes the little pop up appear when you click on "dropdown1" can get rid of this whole section later */
 
-.visible{display:inline-block}
-.hidden{display:none}
-[class*="show"]{display:block}
+/* ends */
 
-.show_list
-	{padding:20px 0;animation:height 1s ease;}
-
-@keyframes height{
-	from{padding:0;opacity:0}
-	to{padding:20px 0;opacity:1}
-	}
-
+/* once you click on the upper right corner like twice or once a search bar appears */
 .show_search form
-	{width:150px;padding:6px;animation:width 1s ease; }
+	{width:150px;padding:6px;animation:width 1s ease}
+/* ends */
 
-@keyframes width{
-	from{width:0;opacity:0}
-	to{width:150px;opacity:1}
-	}
-a {
-  display: block;
-}
 
-button {
-  font-family: Tahoma, Geneva, sans-serif;
-  font-style: normal;
-  font-weight: 400px;
-  margin: 0;
-  border: none;
-  cursor: pointer;
-}
 
-button:focus {
-  background: #808080;
-  color: #000
-}
-
-button, p, .home {
-  font-size: 14px;
-}
-
-button, .home {
-  background: transparent;
-  padding: 14px;
-  color: #a3a3a3;
-  vertical-align: middle;
-}
-
-button:hover, .home:hover {
-  background: #4d4d4d;
-  color: #fff;
-}
-
-h1, h2 {
-  font-size: 30px;
-}
-
-h1, p {
-  margin: 0;
-  padding: 0;
-}
-
-[class*="container"] {
-  display: block;
-  position: relative;
-  float: left;
-}
-
-[class*="content"] {
-  display: none;
-  position: absolute;
-  z-index: 10;
-}
-
-.home, #btnMenu {
-  position: relative;
-  float: left;
-}
-
-#btnMenu, .fa-close {
-  display: none;
-}
-
-h2:before, h2:after {
-  content: "";
-  display: block;
-  position: absolute;
-}
-
-header {
-  width: 100%;
-  padding: 16px;
-  display: block;
-  position: absolute;
-  z-index: 10;
-  box-shadow: 0 8px 6px -6px #000;
-}
-
-header h1, header p {
-  letter-spacing: 5px;
-  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
-}
-#sticky_nav {background: #000;
-width:100%;
-top: -45px;
-display:block;
-position: fixed;
-z-index: 999;
-transition: all .5s ease;}
-
-.btnList {width:120px}
-
-.content_list {background: #fff; width: 25 0px; top: 45px;}
-
-.content_list.right,
-.content_list.right:before
-{right:0;}
-
-.content_list:before{
-	width:8px;
-	top:-8px;
-	border-left:8px solid transparent;
-	border-right:8px solid transparent;
-	border-bottom:8px solid #fff
-	}
-
-.container_right{float:right;}
-
-.content_search
-	{background:#000;top:0;right:40px;}
-  input[type=text]{
-  	background:#fff;
-  	width:100%;
-  	font-size:22px;
-  	border-radius:5px
-  	}
-    @media (max-width:683px){
-	#btnMenu{display:block}
-	.container_menu{display:none}
-	.container_list{width:100%}
-
-	.btnList
-		{width:100%;box-shadow:0 2px 2px -2px #333;}
-
-    .content_list{
-    		width:100%;
-    		top:0;
-    		position:relative;
-    		float:left;
-    		}
-        .content_list.right
-    		{left:0;right:0;}
-
-        .content_list.right:before
-		{left:50%;transform:translate(-50%,0);}
-
-    .title,.blank{
-	width:100%;
-	min-height:100%;
-	display:block;
-	position:relative;
-	float:left
-	}
-
-h2{
-	width:100%;
-	top:50%;
-	left:0;
-	margin:0;
-	padding:0 8px;
-	display:block;
-	position:absolute;
-	color:#fff;
-	transform:translate(0,-50%);
-	}
-  h2:before,h2:after{
-	width:50px;
-	height:50px;
-	left:50%;
-	border-right:1px solid #fff;
-	border-bottom:1px solid #fff;
-	animation:buble 1s linear infinite alternate;
-	}
-
-h2:before{bottom:-100px;}
-h2:after{bottom:-110px;}
-@keyframes buble{
-	from{transform:rotate(45deg) translate(-50%,0) scale(.8,.8)}
-	to{transform:rotate(45deg) translate(-50%,0) scale(1,1)}
-	}
-  .blank{background:#262626}
-
-.visible{display:inline-block;}
-.hidden{display:none;}
-[class*="show"]{display:block;}
-.show_list
-	{padding:20px 0;animation:height 1s ease;}
-  @keyframes height{
-	from{padding:0;opacity:0;}
-	to{padding:20px 0;opacity:1;}
-	}
-
-.show_search form
-	{width:150px;padding:6px;animation:width 1s ease;}
-
-  @keyframes width{
-  	from{width:0;opacity:0}
-  	to{width:150px;opacity:1}
-  	}
 
 
 
