@@ -8,6 +8,12 @@ body {
   max-width: 50px;
 }
 
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
 /* navbar */
 .logo {
   max-width: 150px;
@@ -16,6 +22,8 @@ body {
 
 .navbar {
   background-color: black;
+  animation-name: example;
+  animation-duration: 5s;
 }
 
 .nav-link {
@@ -36,11 +44,6 @@ body {
   }
 }
 
-.navbar {
-  animation-name: example;
-  animation-duration: 5s;
-}
-
 .navbar-toggler-icon {
   color: white;
 }
@@ -49,26 +52,6 @@ body {
 .d-block {
   min-height: 500px;
   max-height: 1000px;
-}
-
-.flexcontainer {
-  margin: 0px 25px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-
-
-  font-family: 'Roboto', sans-serif;
-}
-
-.flexcontainer2 {
-  margin: 0px 50px;
-  padding: 50px 50px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  text-align: justify;
-  font-family: 'Raleway', sans-serif;
 }
 
 /* footer */
@@ -80,6 +63,25 @@ footer {
 }
 
 /* home Page */
+.flexcontainer {
+  margin: 0px 25px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.flexcontainer2 {
+  margin: 0px 50px;
+  padding: 50px 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: justify;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Nunito', sans-serif;
+}
+
 .lobster {
   max-width: 600px;
   padding: 25px;
@@ -89,17 +91,16 @@ footer {
   padding: 25px;
   text-align: justify;
   font-family: 'Raleway', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .h1 {
   text-align: center;
 }
-.row {text-align: justify;}
-.rowvcontent{text-align: justify;
+.row {
+  text-align: justify;
   font-family: 'Raleway', sans-serif;
 }
-
-.h1 {text-align: center;}
 
 .dance {
   max-width: 500px;
@@ -109,15 +110,6 @@ footer {
 .info {
   padding: 25px;
   flex-direction: row;
-}
-
-.welcome {
-  font-family: 'Nunito', sans-serif;
-}
-
-.flexcontainer2 {
-  font-family: 'Nunito',
-    sans-serif;
 }
 
 .card {
@@ -155,25 +147,23 @@ footer {
   justify-content: center;
 }
 
-.p24 {
-  padding: 30px 30px;
+.pcontent {
+  padding: 20px 10px;
 }
 
-table {
+.p24 {
+  padding: 30px 10px;
+}
+
+table, th, td {
   border-style: solid;
+  border-color: #b3b3b3;
   padding: 10px;
-  display: inline-table;
 }
 
 /* vocal page */
 .vcontent {
   margin: 0px 50px;
-}
-
-.container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
 }
 
 .sing {
@@ -192,19 +182,21 @@ table {
 }
 
 /* Summer Camps page */
-.pic4intro, .intro4sum {
+.pic4intro {
   padding: 30px 30px;
+}
+
+.intro4sum {
+  padding: 20px 10px;
 }
 
 .sccontent {
   padding: 10px 10px;
 }
 
-.theory {
-}
-
 .acts {
-  padding: 30px 30px;
+  padding: 20px 20px;
+  min-width: 360px;
 }
 
 /* Contact Page */
@@ -229,8 +221,3 @@ hr {
 .map {
   padding: 20px 20px;
 }
-
-.thespecialchild {
-}
-
-@media {}
