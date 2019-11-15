@@ -97,9 +97,22 @@ footer {
 .h1 {
   text-align: center;
 }
+
 .row {
   text-align: justify;
+}
+
+.rowvcontent {
+  text-align: justify;
   font-family: 'Raleway', sans-serif;
+}
+
+.h1 {
+  text-align: center;
+}
+
+.prices {
+  text-align: center;
 }
 
 .dance {
@@ -190,9 +203,7 @@ table, th, td {
   padding: 20px 10px;
 }
 
-.sccontent {
-  padding: 10px 10px;
-}
+.theory {}
 
 .acts {
   padding: 20px 20px;

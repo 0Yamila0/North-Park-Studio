@@ -8,17 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="styles2.css">
-<link rel="JavaScript" href="html.JS">
+<link rel="JavaScript" href="JS.html">
     <title>Hello, world!</title>
   </head>
   <body>
-    <header>
-	<h1>LOGO</h1>
-	<p>Description</p>
-</header>
+
 <nav id="sticky_nav">
 	<div class="container_left">
-		<a class="home" href="https://codepen.io/uzcho_/" target="blank_">
+		<a class="home" href="index.html" target="blank_">
 			<i class="fa fa-home"></i>
 		</a>
 		<button id="btnMenu" onclick="openMenu()">
@@ -29,67 +26,56 @@
 	<div class="container_menu" id="thisMenu">
 		<div class="container_list">
 			<button class="btnList" onclick="openList('1')">
-				<span class="drop">Dropdown 1</span>
-				<span class="acc">Accordion 1</span>
+				<span class="drop"> <a href="index.html">Home </a> </span>
+
 			</button>
-			<div class="content_list left" id="thisList_1">
-				<p>1<br>Lorem ipsum<br>Lorem ipsum<br>Lorem ipsum</p>
-			</div>
+
 		</div>
 		<div class="container_list">
 			<button class="btnList" onclick="openList('2')">
-				<span class="drop">Dropdown 2</span>
-				<span class="acc">Accordion 2</span>
+				<span class="drop"> <a href="Piano.html">piano</a></span>
+
 			</button>
-			<div class="content_list left" id="thisList_2">
-				<p>2<br>Lorem ipsum<br>Lorem ipsum<br>Lorem ipsum</p>
-			</div>
+
 		</div>
 		<div class="container_list">
 			<button class="btnList" onclick="openList('3')">
-				<span class="drop">Dropdown 3</span>
-				<span class="acc">Accordion 3</span>
+				<span class="drop"><a href="vocal.html">Vocal </a></span>
+
 			</button>
-			<div class="content_list center" id="thisList_3">
-				<p>3<br>Lorem ipsum<br>Lorem ipsum<br>Lorem ipsum</p>
-			</div>
+
 		</div>
 		<div class="container_list">
 			<button class="btnList" onclick="openList('4')">
-				<span class="drop">Dropdown 4</span>
-				<span class="acc">Accordion 4</span>
+				<span class="drop"><a href="summer_camps.html"> Camps </a></span>
+
 			</button>
-			<div class="content_list right" id="thisList_4">
-				<p>4<br>Lorem ipsum<br>Lorem ipsum<br>Lorem ipsum</p>
-			</div>
+
 		</div>
 		<div class="container_list">
 			<button class="btnList" onclick="openList('5')">
-				<span class="drop">Dropdown 5</span>
-				<span class="acc">Accordion 5</span>
-			</button>
-			<div class="content_list right" id="thisList_5">
-				<p>5<br>Lorem ipsum<br>Lorem ipsum<br>Lorem ipsum</p>
-			</div>
-		</div>
-	</div>
-	<div class="container_right">
-		<div class="content_search" id="thisSearch">
-			<form><input type="text" placeholder="Search..."></form>
-		</div>
-		<button id="btnSearch" onclick="openSearch()">
-			<i class="fa fa-search"></i>
-			<i class="fa fa-close"></i>
-		</button>
-	</div>
-</nav>
-<div class="title">
-	<h2>Responsive Slide Down A Sticky Navbar On Scroll</h2>
-</div>
-<div class="blank"></div>
+				<span class="drop"><a href="theater_arts"> Theater Arts </a></span>
 
-<!-- This is not part of Pen -->
-<a class="me" href="https://codepen.io/uzcho_/pens/popular/?grid_type=list" target="_blank" style="color:#fff"></a>
+			</button>
+
+
+
+		</div>
+    <div class="container_list">
+      <button class="btnList" onclick="openList('6')">
+        <span class="drop"><a href="contact.html"> Contact Us </a></span>
+
+      </button>
+
+
+
+    </div>
+	</div>
+
+</nav>
+
+
+
 
 <script>
 window.onscroll = function(){
@@ -215,8 +201,7 @@ function openMenu(){
         </div>
         <div>
 
-          <a href="#" onMouseOver="document.myImage.src= image2.src;"
-          onMouseOut= "document.myImage.src=image1.src;">
+
           <img name="myImage" class="dance col-5" src="Media/t_hands.jpg">
         </div>
       </div>
@@ -277,14 +262,7 @@ function openMenu(){
     <!-- footer ends -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script>
-    if(document.images) {
-       var image1 = new Image();     // Preload an image
-       image1.src = "Media/t_hands.jpg";
-       var image2 = new Image();     // Preload second image
-       image2.src = "Media/tpop.jpg";
-    }
-    </script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
