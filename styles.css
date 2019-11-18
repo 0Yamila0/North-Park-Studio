@@ -8,10 +8,20 @@ body {
   max-width: 50px;
 }
 
-.container {
+.flexcontainer {
+  margin: 0px 125px;
+  padding: 50px 0px;
+  text-align: justify;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Nunito', sans-serif;
+}
+
+.prices {
+  text-align: center;
 }
 
 /* navbar */
@@ -30,7 +40,7 @@ body {
   color: white;
 }
 
-.nav-link:hover {
+.nav-link:hover, .btn-link:hover {
   color: #36b6f7;
 }
 
@@ -63,66 +73,20 @@ footer {
 }
 
 /* home Page */
-.flexcontainer {
-  margin: 0px 25px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  font-family: 'Roboto', sans-serif;
-}
-
-.flexcontainer2 {
-  margin: 0px 50px;
-  padding: 50px 50px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  text-align: justify;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Nunito', sans-serif;
-}
 
 .lobster {
   max-width: 600px;
   padding: 25px;
 }
 
-.welcome {
-  padding: 25px;
-  text-align: justify;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Nunito', sans-serif;
-}
-
-.h1 {
-  text-align: center;
-}
-
-.row {
-  text-align: justify;
-}
-
-.rowvcontent {
-  text-align: justify;
-  font-family: 'Raleway', sans-serif;
-}
-
-.h1 {
-  text-align: center;
-}
-
-.prices {
-  text-align: center;
+.welcome, .ourstudio {
+  padding: 20px;
 }
 
 .dance {
   max-width: 500px;
   max-height: 1000px;
-}
-
-.info {
-  padding: 25px;
-  flex-direction: row;
+  padding: 20px;
 }
 
 .card {
@@ -149,42 +113,19 @@ footer {
   background-color: black;
 }
 
-.btn-link:hover {
-  color: #36b6f7;
-}
-
 /* Piano Page */
-.pp1 {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-
-.pcontent {
-  padding: 20px 10px;
-}
-
-.p24 {
+.pcontent, .p24 {
   padding: 30px 10px;
 }
 
 table, th, td {
+  text-align: center;
   border-style: solid;
   border-color: #b3b3b3;
   padding: 10px;
 }
 
 /* vocal page */
-.vcontent {
-  margin: 0px 50px;
-}
-
-.sing {
-  padding: 10px 10px;
-  max-width: 400px;
-  flex-grow: 300px;
-}
-
 .nextto {
   padding: 30px 30px;
 }
@@ -195,15 +136,9 @@ table, th, td {
 }
 
 /* Summer Camps page */
-.pic4intro {
-  padding: 30px 30px;
+.sccontent {
+  padding: 20px 20px;
 }
-
-.intro4sum {
-  padding: 20px 10px;
-}
-
-.theory {}
 
 .acts {
   padding: 20px 20px;
