@@ -17,6 +17,44 @@ body {
   text-align: justify;
 }
 
+button
+  {margin:0;border:none;cursor:pointer;}
+  button:focus
+{background:#808080;color:#000;}
+
+button,
+.home{
+background:transparent;
+padding:14px;
+
+vertical-align:middle;
+}
+button:hover,.home:hover
+{background:#4d4d4d;color:#fff;}
+
+
+[class*="container_list"]
+  {display:block;position:relative; float: left;}
+
+
+/* added the line below and the search bar completely disappeared */
+
+
+
+
+
+
+
+/* made the black part go smaller and the words disappeared */
+  #sticky_nav{
+    background:#000;
+    width:100%;
+    top:-45px;
+    display:block;
+    position:fixed;
+    z-index:999;
+    transition:all .5s ease
+    }
 /* navbar */
 
 .logo {
