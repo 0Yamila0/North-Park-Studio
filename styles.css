@@ -17,6 +17,44 @@ body {
   text-align: justify;
 }
 
+button
+  {margin:0;border:none;cursor:pointer;}
+  button:focus
+{background:#808080;color:#000;}
+
+button,
+.home{
+background:transparent;
+padding:14px;
+
+vertical-align:middle;
+}
+button:hover,.home:hover
+{background:#4d4d4d;color:#fff;}
+
+
+[class*="container_list"]
+  {display:block;position:relative; float: left;}
+
+
+/* added the line below and the search bar completely disappeared */
+
+
+
+
+
+
+
+/* made the black part go smaller and the words disappeared */
+  #sticky_nav{
+    background:#000;
+    width:100%;
+    top:-45px;
+    display:block;
+    position:fixed;
+    z-index:999;
+    transition:all .5s ease
+    }
 /* navbar */
 
 .logo {
@@ -76,30 +114,36 @@ footer {
 .lobster {
   max-width: 600px;
   padding: 25px;
-  font-family: 'Archivo Narrow', sans-serif;
-  font-size: 20px;
 }
 
 .welcome {
   padding: 25px;
   text-align: justify;
-font-family: 'Archivo Narrow', sans-serif;
+
 }
 
-.prices{
+.price{
   text-align: center;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 18px;
+
 }
+.intro{  text-align: center;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 40x;
+}
+.info{font-family: 'Archivo Narrow', sans-serif;
+font-size: 70x;}
+
 
 .row, .vcontent {
   text-align: justify;
-  font-family: 'Archivo Narrow', sans-serif;
-  font-size: 20px;
 }
 
 .h1 {
   text-align: center;
   font-family: 'Archivo Narrow', sans-serif;
-  font-size: 20px;
+  font-size: 35px;
 }
 
 .prices {
@@ -114,8 +158,6 @@ font-family: 'Archivo Narrow', sans-serif;
 
 .card {
   background-color: #DCDCDC;
-  font-family: 'Archivo Narrow', sans-serif;
-  font-size: 20px;
 }
 
 .card-img-top {
