@@ -30,7 +30,7 @@ body,button
   h1,p
   	{margin:0;padding:0}
 [class*="container"]
-{display:block;position:relative;float:left;}
+{position:relative;}
 
 
 [class*="content"]
