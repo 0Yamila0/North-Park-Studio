@@ -8,6 +8,14 @@ body {
   max-width: 50px;
 }
 
+.flexcontainer {
+  margin: 0px 7px;
+  padding: 50px 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: justify;
+}
 
 /* navbar */
 
@@ -59,24 +67,6 @@ footer {
 }
 
 /* home Page */
-.flexcontainer {
-  margin: 0px 25px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-
-}
-
-.flexcontainer2 {
-  margin: 0px 50px;
-  padding: 50px 50px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  text-align: justify;
-
-}
-
 .lobster {
   max-width: 600px;
   padding: 25px;
@@ -88,7 +78,6 @@ footer {
   padding: 25px;
   text-align: justify;
 font-family: 'Archivo Narrow', sans-serif;
-font-size:1px;
 }
 
 .prices{
