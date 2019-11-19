@@ -14,33 +14,57 @@
 <body>
   <header>
     <!-- start of navbar -->
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="index.html"> <img class="logo" src="Media/Logo.jpg"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon">♪♪♪</span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Piano.html">Piano</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="vocal.html">Vocal</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="theater_arts.html">Theater Arts</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="summer_camps.html">Summer Camps</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
+    <nav id="sticky_nav">
+
+      <div class="container_menu" id="thisMenu">
+        <div class="container_list">
+          <button class="btnList" onclick="openList('1')">
+            <span class="drop"> <a href="index.html">Home </a> </span>
+
+          </button>
+
+        </div>
+        <div class="container_list">
+          <button class="btnList" onclick="openList('2')">
+            <span class="drop"> <a href="Piano.html">piano</a></span>
+
+          </button>
+
+        </div>
+        <div class="container_list">
+          <button class="btnList" onclick="openList('3')">
+            <span class="drop"><a href="vocal.html">Vocal </a></span>
+
+          </button>
+
+        </div>
+        <div class="container_list">
+          <button class="btnList" onclick="openList('4')">
+            <span class="drop"><a href="summer_camps.html"> Camps </a></span>
+
+          </button>
+
+        </div>
+        <div class="container_list">
+          <button class="btnList" onclick="openList('5')">
+            <span class="drop"><a href="theater_arts.html"> Theater Arts </a></span>
+
+          </button>
+
+
+
+        </div>
+        <div class="container_list">
+          <button class="btnList" onclick="openList('6')">
+            <span class="drop"><a href="contact.html"> Contact Us </a></span>
+
+          </button>
+
+
+
+        </div>
       </div>
+
     </nav>
     <!-- end of navbar -->
   </header>
@@ -118,6 +142,44 @@
       <br>
     </div>
   </div>
+  <script>
+  window.onscroll = function(){
+     scrollFunction()
+  }
+  function scrollFunction(){
+     var sn = document.getElementById("sticky_nav");
+        if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+           sn.style.top = "0"
+        }
+        else{
+           sn.style.top = "-45px"
+        }
+  }
+
+  function openList(x){
+     var cL = document.getElementsByClassName("content_list");
+     var i;
+        for(i = 0; i < cL.length; i++){
+           var OcL = cL[i];
+              if(cL[i] != document.getElementById("thisList_" + x)){
+                 OcL.classList.remove("show_list")
+              }
+        }
+     document.getElementById("thisList_" + x).classList.toggle("show_list")
+  }
+
+  function openSearch(){
+     document.getElementById("thisSearch").classList.toggle("show_search");
+     document.getElementById("btnSearch").getElementsByTagName("i")[0].classList.toggle("hidden");
+     document.getElementById("btnSearch").getElementsByTagName("i")[1].classList.toggle("visible")
+  }
+
+  function openMenu(){
+     document.getElementById("thisMenu").classList.toggle("show_menu");
+     document.getElementById("btnMenu").getElementsByTagName("i")[0].classList.toggle("hidden");
+     document.getElementById("btnMenu").getElementsByTagName("i")[1].classList.toggle("visible")
+  }
+  </script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
