@@ -206,12 +206,16 @@ table, th, td {
   padding: 30px 30px;
 }
 
+.invoice {
+  padding: 20px 20px;
+}
+
 /* Summer Camps page */
 .sccontent {
   padding: 20px 20px;
 }
 
-.acts {
+.duck {
   padding: 20px 20px;
   min-width: 360px;
 }
