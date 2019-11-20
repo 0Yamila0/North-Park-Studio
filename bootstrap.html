@@ -14,63 +14,74 @@
   <body>
 
       <!-- start of navbar -->
-      <nav id="sticky_nav">
-        <div class="logo">
-          <
 
-      	<div class="container_menu" id="thisMenu">
-      		<div class="container_list">
-      			<button class="btnList" onclick="openList('1')">
-      				<span class="drop"> <a href="index.html">Home </a> </span>
+</style>
+</head>
+<body>
 
-      			</button>
+<div class="header">
+  <h2>Scroll Down</h2>
+  <p>Scroll down to see the sticky effect.</p>
+</div>
 
-      		</div>
-      		<div class="container_list">
-      			<button class="btnList" onclick="openList('2')">
-      				<span class="drop"> <a href="Piano.html">piano</a></span>
+<div id="navbar">
+  <a class="active" href="javascript:void(0)">Home</a>
+  <a href="javascript:void(0)">News</a>
+  <a href="javascript:void(0)">Contact</a>
+</div>
 
-      			</button>
+<nav id="sticky_nav">
 
-      		</div>
-      		<div class="container_list">
-      			<button class="btnList" onclick="openList('3')">
-      				<span class="drop"><a href="vocal.html">Vocal </a></span>
+  <div class="container_menu" id="thisMenu">
+    <div class="container_list">
+      <button class="btnList" onclick="openList('1')">
+        <span class="drop"> <a href="index.html">Home </a> </span>
 
-      			</button>
+      </button>
 
-      		</div>
-      		<div class="container_list">
-      			<button class="btnList" onclick="openList('4')">
-      				<span class="drop"><a href="summer_camps.html"> Camps </a></span>
+    </div>
+    <div class="container_list">
+      <button class="btnList" onclick="openList('2')">
+        <span class="drop"> <a href="Piano.html">Piano</a></span>
 
-      			</button>
+      </button>
 
-      		</div>
-      		<div class="container_list">
-      			<button class="btnList" onclick="openList('5')">
-      				<span class="drop"><a href="theater_arts"> Theater Arts </a></span>
+    </div>
+    <div class="container_list">
+      <button class="btnList" onclick="openList('3')">
+        <span class="drop"><a href="vocal.html">Vocal </a></span>
 
-      			</button>
+      </button>
 
+    </div>
+    <div class="container_list">
+      <button class="btnList" onclick="openList('4')">
+        <span class="drop"><a href="summer_camps.html"> Camps </a></span>
 
+      </button>
 
-      		</div>
-          <div class="container_list">
-            <button class="btnList" onclick="openList('6')">
-              <span class="drop"><a href="contact.html"> Contact Us </a></span>
+    </div>
+    <div class="container_list">
+      <button class="btnList" onclick="openList('5')">
+        <span class="drop"><a href="theater_arts.html"> Theater Arts </a></span>
 
-            </button>
-
-
-
-          </div>
-      	</div>
-
-      </nav>
+      </button>
 
 
 
+    </div>
+    <div class="container_list">
+      <button class="btnList" onclick="openList('6')">
+        <span class="drop"><a href="contact.html"> Contact Us </a></span>
+
+      </button>
+
+
+
+    </div>
+  </div>
+
+</nav>
 
       <script>
       window.onscroll = function(){
@@ -86,29 +97,26 @@
             }
       }
 
-      function openList(x){
-         var cL = document.getElementsByClassName("content_list");
-         var i;
-            for(i = 0; i < cL.length; i++){
-               var OcL = cL[i];
-                  if(cL[i] != document.getElementById("thisList_" + x)){
-                     OcL.classList.remove("show_list")
-                  }
-            }
-         document.getElementById("thisList_" + x).classList.toggle("show_list")
-      }
 
-      function openSearch(){
-         document.getElementById("thisSearch").classList.toggle("show_search");
-         document.getElementById("btnSearch").getElementsByTagName("i")[0].classList.toggle("hidden");
-         document.getElementById("btnSearch").getElementsByTagName("i")[1].classList.toggle("visible")
-      }
 
-      function openMenu(){
-         document.getElementById("thisMenu").classList.toggle("show_menu");
-         document.getElementById("btnMenu").getElementsByTagName("i")[0].classList.toggle("hidden");
-         document.getElementById("btnMenu").getElementsByTagName("i")[1].classList.toggle("visible")
-      }
+
+
+
+
+
+
+      window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
       </script>
       <!-- end of navbar -->
 
