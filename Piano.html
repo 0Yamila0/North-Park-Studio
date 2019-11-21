@@ -15,9 +15,9 @@
 </head>
 
 <body class="pbody">
-  <header>
+
     <!-- start of navbar -->
-    <nav id="sticky_nav">
+    <nav class=" fixed-nav-bar">
 
       <div class="container_menu" id="thisMenu">
         <div class="container_list">
@@ -70,10 +70,16 @@
 
     </nav>
     <!-- end of navbar -->
-  </header>
+
   <!-- start of info for piano page -->
   <br>
-  <h1> Piano </h1>
+  <div class="head-for-title">
+    <base href="Media/pianoheader.jpg">
+    <header>
+  <h1><span> Piano</span> </h1>
+</header>
+</div>
+<main>
   <div class="flexcontainer">
     <div class="row pcontent">
       <div class="col-sm-12">
@@ -149,38 +155,9 @@
       <img class="col-sm-12 col-md-6 p24" src="Media/p24.jpg">
     </div>
   </div>
-  <script>
-  window.onscroll = function(){
-     scrollFunction()
-  }
-  function scrollFunction(){
-     var sn = document.getElementById("sticky_nav");
-        if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
-           sn.style.top = "0"
-        }
-        else{
-           sn.style.top = "-45px"
-        }
-  }
-
-  function openList(x){
-     var cL = document.getElementsByClassName("content_list");
-     var i;
-        for(i = 0; i < cL.length; i++){
-           var OcL = cL[i];
-              if(cL[i] != document.getElementById("thisList_" + x)){
-                 OcL.classList.remove("show_list")
-              }
-        }
-     document.getElementById("thisList_" + x).classList.toggle("show_list")
-  }
+</main>
 
 
-  </script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
 <!-- info for piano  -->
 <!-- footer begins -->
 <footer id="foot">
@@ -189,6 +166,10 @@
   <a class="nav-link" href="contact.html">Find us!</a>
   <a class="nav-link fa fa-facebook" href="https://m.facebook.com/NorthparkStudio/"><img class="facebook" src="Media/facebook.png"></a>
 </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 <!-- footer ends -->
 
 </html>
