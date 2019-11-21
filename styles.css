@@ -1,6 +1,7 @@
 /* whole website */
 body {
   text-align: center;
+  background-color: #e5ffff;
 }
 
 .facebook {
@@ -112,14 +113,13 @@ footer {
 
 /* home Page */
 .lobster {
-  max-width: 600px;
+  max-width: 500px;
   padding: 25px;
 }
 
-.welcome {
+.welcome, .ourstudio {
   padding: 25px;
   text-align: justify;
-
 }
 
 .price{
@@ -178,8 +178,8 @@ footer {
 }
 
 .p21 {
-  max-width: 90%;
-  min-width: 80%;
+  max-width: 95%;
+  min-width: 90%;
 }
 
 table, th, td {
