@@ -120,6 +120,8 @@ footer {
 .welcome, .ourstudio {
   padding: 25px;
   text-align: justify;
+
+
 }
 
 .price{
@@ -137,7 +139,9 @@ footer {
 .h1 {
   text-align: center;
   font-size: 30px;
+ color:#1E90FF;
 }
+
 
 .prices {
   text-align: center;
