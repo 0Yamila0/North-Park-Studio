@@ -96,12 +96,6 @@ button:hover,.home:hover
   min-height: 100px;
 }
 
-@media only screen and (max-width: 600px) {
-  .carousel-inner {
-    max-height: 400px;
-  }
-}
-
 /* footer */
 footer {
   background-color: black;
@@ -171,8 +165,21 @@ footer {
 }
 
 .btn-link {
-  color: white;
+  color: black;
   background-color: black;
+  font-size: 25px;
+}
+
+.btn:hover {
+  background-color: #cc7a00;
+}
+
+.btn {
+  max-width: 300px;
+  min-width: 300px;
+  max-height: 50px;
+  min-height: 50px;
+  background-color: #ff9900;
 }
 
 /* Piano Page */
@@ -281,4 +288,11 @@ hr {
 
 .map {
   padding: 20px 20px;
+}
+
+/*Media query*/
+@media only screen and (max-width: 600px) {
+  .carousel-inner {
+    max-height: 400px;
+  }
 }
