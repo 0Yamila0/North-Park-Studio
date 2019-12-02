@@ -32,15 +32,6 @@ body {
   {display:block;position:relative; float: left;}
 
 
-/* added the line below and the search bar completely disappeared */
-
-
-
-
-
-
-/* made the black part go smaller and the words disappeared */
-
 /* navbar */
 /*sizes logo */
 .logo {
@@ -51,16 +42,13 @@ body {
 .navbar {
   background-color: black;
 }
-
+/**/
 .nav {
   width: 100%;
   position: absolute;
   top: 0;
 }
-
-
-
-
+/**/
 .nav-link {
   color: white;
 }
@@ -68,9 +56,7 @@ body {
 .nav-link:hover, .btn-link:hover {
   color: #36b6f7;
 }
-
-
-
+/**/
 .navbar-toggler-icon {
   color: white;
 }
@@ -158,9 +144,7 @@ footer {
   text-align: center;
 }
 
-
-
- /* start of experiment */
+ /* start of paralax */
  header {
  	background:url(Media/pianoheader.jpg) no-repeat;
  	padding-top: 61.93333333%;
@@ -192,7 +176,7 @@ footer {
     @media all and (max-width: 400px) {
       main { padding: 2rem; }
     }
- /* end of exp. */
+ /* end of paralax */
 /**/
 .pcontent, .p24 {
   padding: 20px 20px;
@@ -220,7 +204,6 @@ table, th, td {
 .vcontent {
   text-align: justify;
 }
-
 /* end of vocal */
 
 /* Theater arts page*/
@@ -269,6 +252,7 @@ hr {
 .map {
   padding: 20px 20px;
 }
+/*end of contact*/
 
 /*Media query*/
 @media only screen and (max-width: 600px) {
