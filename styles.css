@@ -17,20 +17,6 @@ body {
   text-align: justify;
 }
 
-button
-  {margin:0;border:none;cursor:pointer;}
-  button:focus
-{background:#808080;color:#000;}
-
-button,
-.home{
-background:transparent;
-padding:14px;
-
-vertical-align:middle;
-}
-button:hover,.home:hover
-{background:#4d4d4d;color:#fff;}
 
 
 [class*="container_list"]
@@ -39,15 +25,6 @@ button:hover,.home:hover
 
 /* added the line below and the search bar completely disappeared */
 
-.fixed-nav-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
-  height: 50px;
-  background-color: black;
-}
 
 
 
@@ -64,9 +41,16 @@ button:hover,.home:hover
 
 .navbar {
   background-color: black;
-  animation-name: example;
-  animation-duration: 5s;
 }
+
+.nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+
+
 
 .nav-link {
   color: white;
@@ -76,15 +60,7 @@ button:hover,.home:hover
   color: #36b6f7;
 }
 
-@keyframes example {
-  from {
-    background-color: black;
-  }
 
-  to {
-    background-color: #4DC3ff;
-  }
-}
 
 .navbar-toggler-icon {
   color: white;
