@@ -1,13 +1,14 @@
 /* whole website */
+/*centers everything on webpage*/
 body {
   text-align: center;
 }
-
+/*styles facebook logo in footer*/
 .facebook {
   padding-bottom: 20px;
   max-width: 50px;
 }
-
+/*adds responsiveness to content*/
 .flexcontainer {
   margin: 0px 20px;
   padding: 20px 20px;
@@ -16,87 +17,59 @@ body {
   justify-content: center;
   text-align: justify;
 }
-
-button
-  {margin:0;border:none;cursor:pointer;}
-  button:focus
-{background:#808080;color:#000;}
-
-button,
-.home{
-background:transparent;
-padding:14px;
-
-vertical-align:middle;
+/*aligns tables*/
+.price{
+  text-align: center;
 }
-button:hover,.home:hover
-{background:#4d4d4d;color:#fff;}
+/**/
+.row {
+  text-align: justify;
+}
+
 
 
 [class*="container_list"]
   {display:block;position:relative; float: left;}
 
 
-/* added the line below and the search bar completely disappeared */
-
-.fixed-nav-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
-  height: 50px;
-  background-color: black;
-}
-
-
-
-
-
-/* made the black part go smaller and the words disappeared */
-
 /* navbar */
-
+/*sizes logo */
 .logo {
   max-width: 150px;
   max-height: 500px;
 }
-
+/*makes navbar black */
 .navbar {
   background-color: black;
-  animation-name: example;
-  animation-duration: 5s;
 }
-
+/**/
+.nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+/**/
 .nav-link {
   color: white;
 }
-
+/* makes links change to blue*/
 .nav-link:hover, .btn-link:hover {
   color: #36b6f7;
 }
-
-@keyframes example {
-  from {
-    background-color: black;
-  }
-
-  to {
-    background-color: #4DC3ff;
-  }
-}
-
+/**/
 .navbar-toggler-icon {
   color: white;
 }
 
 /* carousel */
+/*sizes carousel */
 .d-block {
   min-height: 500px;
   min-height: 100px;
 }
 
 /* footer */
+/* styles and places items in footer*/
 footer {
   background-color: black;
   display: cover;
@@ -105,75 +78,54 @@ footer {
 }
 
 /* home Page */
+/*sizes first image*/
 .lobster {
   max-width: 500px;
   padding: 25px;
 }
-
+/* centers paragraphs*/
 .welcome, .ourstudio {
   padding: 25px;
   text-align: justify;
-
-
 }
-
-.price{
-  text-align: center;
-
-}
-.intro{  text-align: center;
-}
-
-
-.row, .vcontent {
-  text-align: justify;
-}
-
-.h1 {
-  text-align: center;
-  font-size: 30px;
- color:#1E90FF;
-}
-
-
-.prices {
+/*centers headers*/
+.intro {
   text-align: center;
 }
-
+/*sizes second picture*/
 .dance {
   max-width: 500px;
   max-height: 1000px;
   padding: 20px;
 }
-
+/*changes color of testimonials*/
 .card {
   background-color: #DCDCDC;
 }
-
+/*adds a border to the testimonials*/
 .card-img-top {
   border-style: solid;
 }
-
+/*makes cards in testimonials responsive*/
 .card-body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
 }
-
+/*changes testimonial header to black*/
 .card-header {
   background-color: black;
 }
-
+/*makes testimonial link black*/
 .btn-link {
   color: black;
-  background-color: black;
   font-size: 25px;
 }
-
+/*makes testimonial button a darker orange when hovering*/
 .btn:hover {
   background-color: #cc7a00;
 }
-
+/*changes size of testimonial button*/
 .btn {
   max-width: 300px;
   min-width: 300px;
@@ -184,13 +136,15 @@ footer {
 /* end of home page */
 
 /* Piano Page */
-.head-for-title{ padding-top: 20px;
- padding-bottom: 20px; color: white;
-text-align: center}
+/**/
+.head-for-title{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  text-align: center;
+}
 
-
-
- /* start of experiment */
+ /* start of paralax */
  header {
  	background:url(Media/pianoheader.jpg) no-repeat;
  	padding-top: 61.93333333%;
@@ -222,17 +176,17 @@ text-align: center}
     @media all and (max-width: 400px) {
       main { padding: 2rem; }
     }
- /* end of exp. */
-
+ /* end of paralax */
+/**/
 .pcontent, .p24 {
   padding: 20px 20px;
 }
-
+/**/
 .p21 {
   max-width: 95%;
   min-width: 90%;
 }
-
+/**/
 table, th, td {
   text-align: center;
   border-style: solid;
@@ -240,27 +194,35 @@ table, th, td {
   padding: 10px;
 }
 /* end of piano  */
+
 /* vocal page */
+/**/
 .nextto {
   padding: 30px 30px;
 }
-
+/**/
+.vcontent {
+  text-align: justify;
+}
 /* end of vocal */
+
 /* Theater arts page*/
+/**/
 .hands {
   padding: 30px 30px;
 }
-
+/**/
 .invoice {
   padding: 20px 20px;
 }
 /* end of theater arts */
 
 /* Summer Camps page */
+/**/
 .sccontent {
   padding: 20px 20px;
 }
-
+/**/
 .duck {
   padding: 20px 20px;
   min-width: 360px;
@@ -268,30 +230,33 @@ table, th, td {
 /* end of summer camps */
 
 /* Contact Page */
+/**/
 .ccontent {
   margin: 0px 50px;
 }
-
+/**/
 hr {
   background-color: #36b6f7;
 }
-
+/**/
 .hours {
   list-style-image: url(Media/eighthnote1.png);
   display: inline-block;
   text-align: left;
 }
-
+/**/
 .time {
   text-align: center;
 }
-
+/**/
 .map {
   padding: 20px 20px;
 }
+/*end of contact*/
 
 /*Media query*/
 @media only screen and (max-width: 600px) {
+  /**/
   .carousel-inner {
     max-height: 400px;
   }
