@@ -72,7 +72,7 @@ body {
 /* styles and places items in footer*/
 footer {
   background-color: black;
-  display: cover;
+  display: inline;
   flex-direction: column;
   align-items: center;
 }
@@ -147,7 +147,7 @@ footer {
  /* start of paralax */
  header {
  	background:url(Media/pianoheader.jpg) no-repeat;
- 	padding-top: 61.93333333%;
+ 	padding-top: 61.9333333%;
    	background-size: cover;}
     ader img {
     	position: absolute;
