@@ -3,11 +3,13 @@
 body {
   text-align: center;
 }
+
 /*styles facebook logo in footer*/
 .facebook {
   padding-bottom: 20px;
   max-width: 50px;
 }
+
 /*adds responsiveness to content*/
 .flexcontainer {
   margin: 0px 20px;
@@ -17,20 +19,22 @@ body {
   justify-content: center;
   text-align: justify;
 }
+
 /*aligns tables*/
-.price{
+.price {
   text-align: center;
 }
+
 /**/
 .row {
   text-align: justify;
 }
 
-
-
-[class*="container_list"]
-  {display:block;position:relative; float: left;}
-
+[class*="container_list"] {
+  display: block;
+  position: relative;
+  float: left;
+}
 
 /* navbar */
 /*sizes logo */
@@ -38,24 +42,29 @@ body {
   max-width: 150px;
   max-height: 500px;
 }
+
 /*makes navbar black */
 .navbar {
   background-color: black;
 }
+
 /**/
 .nav {
   width: 100%;
   position: absolute;
   top: 0;
 }
+
 /**/
 .nav-link {
   color: white;
 }
+
 /* makes links change to blue*/
 .nav-link:hover, .btn-link:hover {
   color: #36b6f7;
 }
+
 /**/
 .navbar-toggler-icon {
   color: white;
@@ -83,48 +92,58 @@ footer {
   max-width: 500px;
   padding: 25px;
 }
+
 /* centers paragraphs*/
 .welcome, .ourstudio {
   padding: 25px;
   text-align: justify;
 }
+
 /*centers headers*/
 .intro {
   text-align: center;
 }
+
 /*sizes second picture*/
 .dance {
   max-width: 500px;
   max-height: 1000px;
   padding: 20px;
 }
+
 /*changes color of testimonials*/
 .card {
   background-color: #DCDCDC;
 }
+
 /*adds a border to the testimonials*/
 .card-img-top {
   border-style: solid;
 }
+
 /*makes cards in testimonials responsive*/
 .card-body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
 }
+
 /*changes testimonial header to black*/
 .card-header {
   background-color: black;
 }
+
 /*makes testimonial link black*/
 .btn-link {
   color: black;
   font-size: 25px;
 }
+
 /*makes testimonial button a darker orange when hovering*/
 .btn:hover {
   background-color: #cc7a00;
 }
+
 /*changes size of testimonial button*/
 .btn {
   max-width: 300px;
@@ -133,59 +152,71 @@ footer {
   min-height: 50px;
   background-color: #ff9900;
 }
-/* end of home page */
 
+/* end of home page */
 /* Piano Page */
 /**/
-.head-for-title{
+.head-for-title {
   padding-top: 20px;
   padding-bottom: 20px;
   color: white;
   text-align: center;
 }
 
- /* start of paralax */
- header {
- 	background:url(Media/pianoheader.jpg) no-repeat;
- 	padding-top: 61.9333333%;
-   	background-size: cover;}
-    ader img {
-    	position: absolute;
-    	top: 0;
-    	right: 0;
-    	width: 45.8%;
-    }
-    header h1 {
-    	position: fixed;
-    	top: 8rem;
-    	right: 2rem;
-      font-size: 12vw;
-      line-height: .8;
-      margin-top: 0;
-      text-align: center;
-      flex-direction: column;
-      color: black;
-    }
-    header h1 span {
-      display: block;
-      font-size: 8.75vw;
-    }
-    main {
-      background: #fff;
-      position: relative; }
-    @media all and (max-width: 400px) {
-      main { padding: 2rem; }
-    }
- /* end of paralax */
+/* start of paralax */
+header {
+  background: url(Media/pianoheader.jpg) no-repeat;
+  padding-top: 61.9333333%;
+  background-size: cover;
+}
+
+ader img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45.8%;
+}
+
+header h1 {
+  position: fixed;
+  top: 8rem;
+  right: 2rem;
+  font-size: 12vw;
+  line-height: .8;
+  margin-top: 0;
+  text-align: center;
+  flex-direction: column;
+  color: black;
+}
+
+header h1 span {
+  display: block;
+  font-size: 8.75vw;
+}
+
+main {
+  background: #fff;
+  position: relative;
+}
+
+@media all and (max-width: 400px) {
+  main {
+    padding: 2rem;
+  }
+}
+
+/* end of paralax */
 /**/
 .pcontent, .p24 {
   padding: 20px 20px;
 }
+
 /**/
 .p21 {
   max-width: 95%;
   min-width: 90%;
 }
+
 /**/
 table, th, td {
   text-align: center;
@@ -193,76 +224,95 @@ table, th, td {
   border-color: #b3b3b3;
   padding: 10px;
 }
-/* end of piano  */
 
+/* end of piano  */
 /* vocal page */
 /**/
 .nextto {
   padding: 30px 30px;
 }
+
 /**/
 .vcontent {
   text-align: justify;
 }
-/* end of vocal */
 
+/* end of vocal */
 /* Theater arts page*/
 /**/
 .hands {
   padding: 30px 30px;
 }
+
 /**/
 .invoice {
   padding: 20px 20px;
 }
-/* end of theater arts */
 
+/* end of theater arts */
 /* Summer Camps page */
 /**/
 .sccontent {
   padding: 20px 20px;
 }
+
 /**/
 .duck {
   padding: 20px 20px;
   min-width: 360px;
 }
-/* end of summer camps */
 
+/* end of summer camps */
 /* Contact Page */
 /**/
 .ccontent {
   margin: 0px 50px;
 }
+
 /**/
 hr {
   background-color: #36b6f7;
 }
+
 /**/
 .hours {
   list-style-image: url(Media/eighthnote1.png);
   display: inline-block;
   text-align: left;
 }
+
 /**/
 .time {
   text-align: center;
 }
+
 /**/
 .map {
   padding: 20px 20px;
 }
-/*end of contact*/
 
+/*end of contact*/
 /*Media query*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 775px) {
+
   /**/
   .carousel-inner {
-    max-height: 400px;
+    max-height: 450px;
   }
+
+  .navbar {}
+
   /**/
   .map {
     max-width: 200px;
     max-height: 250px;
+  }
+
+  textarea {
+    width: 90%;
+  }
+
+  .footerlogo {
+    width: 90%;
   }
 }
