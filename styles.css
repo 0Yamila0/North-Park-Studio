@@ -163,49 +163,40 @@ footer {
   text-align: center;
 }
 
-/* start of paralax */
-header {
-  background: url(Media/pianoheader.jpg) no-repeat;
-  padding-top: 61.9333333%;
-  background-size: cover;
-}
+ /* start of paralax */
+ header {
+ 	background:url(https://myrealdomain.com/images/music-notes-background-2.png) no-repeat;
+ 	padding-top: 61.9333333%;
+   	background-size: cover;}
+    ader img {
+    	position: absolute;
+    	top: 0;
+    	right: 0;
+    	width: 45.8%;
+    }
+    header h1 {
+    	position: fixed;
+    	top: 8rem;
+    	right: 2rem;
+      font-size: 12vw;
+      line-height: .8;
+      margin-top: 0;
+      text-align: center;
+      flex-direction: column;
+      color: black;
+    }
+    header h1 span {
+      display: cover;
+      font-size: 8.75vw;
+    }
+    main {
+      background: #fff;
+      position: relative; }
+    @media all and (max-width: 400px) {
+      main { padding: 2rem; }
+    }
 
-ader img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 45.8%;
-}
-
-header h1 {
-  position: fixed;
-  top: 8rem;
-  right: 2rem;
-  font-size: 12vw;
-  line-height: .8;
-  margin-top: 0;
-  text-align: center;
-  flex-direction: column;
-  color: black;
-}
-
-header h1 span {
-  display: block;
-  font-size: 8.75vw;
-}
-
-main {
-  background: #fff;
-  position: relative;
-}
-
-@media all and (max-width: 400px) {
-  main {
-    padding: 2rem;
-  }
-}
-
-/* end of paralax */
+ /* end of paralax */
 /**/
 .pcontent, .p24 {
   padding: 20px 20px;
