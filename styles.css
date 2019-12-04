@@ -146,7 +146,7 @@ footer {
 
  /* start of paralax */
  header {
- 	background:url(Media/pianoheader.jpg) no-repeat;
+ 	background:url(https://myrealdomain.com/images/music-notes-background-2.png) no-repeat;
  	padding-top: 61.9333333%;
    	background-size: cover;}
     ader img {
@@ -176,6 +176,7 @@ footer {
     @media all and (max-width: 400px) {
       main { padding: 2rem; }
     }
+
  /* end of paralax */
 /**/
 .pcontent, .p24 {
