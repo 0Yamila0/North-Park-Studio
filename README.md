@@ -19,7 +19,7 @@ what do you want me to?
 
 
 
-What is the bootstrap.html file? If you are not using it, delete it.
+What is the bootstrap.html file? If you are not using it, delete it. 
 Looks like you don't use the styles2.css file. If not, delete it.
 Dont' need script tags in js file
 Page Heading is covering your button on small screens

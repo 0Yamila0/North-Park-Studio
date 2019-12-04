@@ -1,4 +1,4 @@
-<script>
+
 window.onscroll = function(){
    scrollFunction()
 }
@@ -35,4 +35,3 @@ function openMenu(){
    document.getElementById("btnMenu").getElementsByTagName("i")[0].classList.toggle("hidden");
    document.getElementById("btnMenu").getElementsByTagName("i")[1].classList.toggle("visible")
 }
-</script>
