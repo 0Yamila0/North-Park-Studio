@@ -1,7 +1,7 @@
 /* whole website */
 /*centers everything on webpage*/
 body {
-  text-align: center;
+  text-align: center; display: cover;
 }
 
 /*styles facebook logo in footer*/
@@ -53,6 +53,7 @@ body {
   width: 100%;
   position: absolute;
   top: 0;
+  bottom: 50;
 }
 
 /**/
