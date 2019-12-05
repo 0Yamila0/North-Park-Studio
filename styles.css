@@ -53,6 +53,7 @@ body {
   width: 100%;
   position: absolute;
   top: 0;
+  z-index: 9999;
 }
 
 /**/
@@ -75,6 +76,14 @@ body {
 .d-block {
   min-height: 500px;
   min-height: 100px;
+}
+
+.anime {
+  font-size: 40px;
+  background: rgba(0, 255, 0, 0.75);
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* footer */
@@ -176,7 +185,7 @@ footer {
     }
     header h1 {
     	position: fixed;
-    	top: 8rem;
+    	top: 10rem;
     	right: 2rem;
       font-size: 12vw;
       line-height: .8;
@@ -184,6 +193,8 @@ footer {
       text-align: center;
       flex-direction: column;
       color: black;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 25px 8px;
     }
     header h1 span {
       display: cover;
@@ -282,6 +293,19 @@ hr {
   padding: 20px 20px;
 }
 
+.form-control {
+  width: 25%;
+  display: inline-block;
+  margin: 0px auto;
+  text-align: left;
+  border-radius: 0px;
+  border-style: groove;
+}
+
+.lesson {
+  display: block;
+}
+
 /*end of contact*/
 /*Media query*/
 @media only screen and (max-width: 775px) {
@@ -290,20 +314,23 @@ hr {
   .carousel-inner {
     max-height: 450px;
   }
-
-  .navbar {}
-
+  header h1 {
+    top: 8rem;
+  }
   /**/
   .map {
-    max-width: 200px;
+    max-width: 75%;
     max-height: 250px;
   }
 
   textarea {
     width: 90%;
   }
+  .form-control {
+    width: 60%;
+  }
 
   .footerlogo {
-    width: 90%;
+    width: 80%;
   }
 }
