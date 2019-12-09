@@ -5,6 +5,12 @@ body {
   display: cover;
 }
 
+/*styles facebook logo in footer*/
+.facebook {
+  padding-bottom: 20px;
+  max-width: 50px;
+}
+
 /*adds responsiveness to content*/
 .flexcontainer {
   margin: 0px 20px;
@@ -73,7 +79,7 @@ table, th, td {
 /*styles links in carousel*/
 .anime {
   font-size: 40px;
-  background: rgba(0, 255, 0, 0.75);
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(82, 178, 53));
   border-radius: 5px;
   padding-left: 10px;
   padding-right: 10px;
@@ -158,7 +164,7 @@ footer {
   min-width: 300px;
   max-height: 50px;
   min-height: 50px;
-  background-color: #ff9900;
+  background-image: linear-gradient(orange, yellow);
 }
 
 /* end of home page */
@@ -200,15 +206,8 @@ main {
   position: relative;
 }
 
-@media all and (max-width: 400px) {
-  main {
-    padding: 2rem;
-  }
-}
-
 /* end of paralax */
-/* Piano Page */
-/*puts padding on content*/
+/*adds padding to pictures*/
 .pcontent, .p24 {
   padding: 20px 20px;
 }
@@ -309,7 +308,7 @@ hr {
     max-height: 450px;
   }
 
-  /*moves headers*/
+  /*moves header in parallax*/
   header h1 {
     top: 8rem;
   }
@@ -333,5 +332,11 @@ hr {
   /*resizes logo in footer*/
   .footerlogo {
     width: 80%;
+  }
+}
+
+@media all and (max-width: 400px) {
+  main {
+    padding: 2rem;
   }
 }
