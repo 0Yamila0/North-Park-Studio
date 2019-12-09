@@ -1,7 +1,8 @@
 /* whole website */
 /*centers everything on webpage*/
 body {
-  text-align: center; display: cover;
+  text-align: center;
+  display: cover;
 }
 
 /*styles facebook logo in footer*/
@@ -28,12 +29,6 @@ body {
 /**/
 .row {
   text-align: justify;
-}
-
-[class*="container_list"] {
-  display: block;
-  position: relative;
-  float: left;
 }
 
 /* navbar */
@@ -80,7 +75,7 @@ body {
 
 .anime {
   font-size: 40px;
-  background: rgba(0, 255, 0, 0.75);
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(82, 178, 53));
   border-radius: 5px;
   padding-left: 10px;
   padding-right: 10px;
@@ -159,7 +154,7 @@ footer {
   min-width: 300px;
   max-height: 50px;
   min-height: 50px;
-  background-color: #ff9900;
+  background-image: linear-gradient(orange, yellow);
 }
 
 /* end of home page */
@@ -172,40 +167,45 @@ footer {
   text-align: center;
 }
 
- /* start of paralax */
- header {
- 	background:url(https://myrealdomain.com/images/music-notes-background-2.png) no-repeat;
- 	padding-top: 61.9333333%;
-   	background-size: cover;}
-    ader img {
-    	position: absolute;
-    	top: 0;
-    	right: 0;
-    	width: 45.8%;
-    }
-    header h1 {
-    	position: fixed;
-    	top: 10rem;
-    	right: 2rem;
-      font-size: 12vw;
-      line-height: .8;
-      margin-top: 0;
-      text-align: center;
-      flex-direction: column;
-      color: black;
-      background: rgba(255, 255, 255, 0.8);
-      padding: 25px 8px;
-    }
-    header h1 span {
-      display: cover;
-      font-size: 8.75vw;
-    }
-    main {
-      background: #fff;
-      position: relative; }
-  
+/* start of paralax */
+header {
+  background: url(https://myrealdomain.com/images/music-notes-background-2.png) no-repeat;
+  padding-top: 61.9333333%;
+  background-size: cover;
+}
 
- /* end of paralax */
+ader img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45.8%;
+}
+
+header h1 {
+  position: fixed;
+  top: 10rem;
+  right: 2rem;
+  font-size: 12vw;
+  line-height: .8;
+  margin-top: 0;
+  text-align: center;
+  flex-direction: column;
+  color: black;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 25px 8px;
+}
+
+header h1 span {
+  display: cover;
+  font-size: 8.75vw;
+}
+
+main {
+  background: #fff;
+  position: relative;
+}
+
+/* end of paralax */
 /**/
 .pcontent, .p24 {
   padding: 20px 20px;
@@ -312,9 +312,11 @@ hr {
   .carousel-inner {
     max-height: 450px;
   }
+
   header h1 {
     top: 8rem;
   }
+
   /**/
   .map {
     max-width: 75%;
@@ -324,6 +326,7 @@ hr {
   textarea {
     width: 90%;
   }
+
   .form-control {
     width: 60%;
   }
@@ -333,7 +336,8 @@ hr {
   }
 }
 
-
 @media all and (max-width: 400px) {
-  main { padding: 2rem; }
+  main {
+    padding: 2rem;
+  }
 }
