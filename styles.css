@@ -1,13 +1,8 @@
 /* whole website */
 /*centers everything on webpage*/
 body {
-  text-align: center; display: cover;
-}
-
-/*styles facebook logo in footer*/
-.facebook {
-  padding-bottom: 20px;
-  max-width: 50px;
+  text-align: center;
+  display: cover;
 }
 
 /*adds responsiveness to content*/
@@ -25,15 +20,12 @@ body {
   text-align: center;
 }
 
-/**/
-.row {
-  text-align: justify;
-}
-
-[class*="container_list"] {
-  display: block;
-  position: relative;
-  float: left;
+/*styles tables*/
+table, th, td {
+  text-align: center;
+  border-style: solid;
+  border-color: #b3b3b3;
+  padding: 10px;
 }
 
 /* navbar */
@@ -48,7 +40,7 @@ body {
   background-color: black;
 }
 
-/**/
+/*keeps navbar at top of paralax*/
 .nav {
   width: 100%;
   position: absolute;
@@ -56,7 +48,7 @@ body {
   z-index: 9999;
 }
 
-/**/
+/*changes the navbar links to white*/
 .nav-link {
   color: white;
 }
@@ -66,7 +58,7 @@ body {
   color: #36b6f7;
 }
 
-/**/
+/*makes the navbar dropdown button white*/
 .navbar-toggler-icon {
   color: white;
 }
@@ -78,6 +70,7 @@ body {
   min-height: 100px;
 }
 
+/*styles links in carousel*/
 .anime {
   font-size: 40px;
   background: rgba(0, 255, 0, 0.75);
@@ -93,6 +86,12 @@ footer {
   display: cover;
   flex-direction: column;
   align-items: center;
+}
+
+/*styles facebook logo in footer*/
+.facebook {
+  padding-bottom: 20px;
+  max-width: 50px;
 }
 
 /* home Page */
@@ -163,102 +162,95 @@ footer {
 }
 
 /* end of home page */
-/* Piano Page */
-/**/
-.head-for-title {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: white;
-  text-align: center;
+/* start of parallax */
+header {
+  background: url(https://myrealdomain.com/images/music-notes-background-2.png) no-repeat;
+  padding-top: 61.9333333%;
+  background-size: cover;
 }
 
- /* start of paralax */
- header {
- 	background:url(https://myrealdomain.com/images/music-notes-background-2.png) no-repeat;
- 	padding-top: 61.9333333%;
-   	background-size: cover;}
-    ader img {
-    	position: absolute;
-    	top: 0;
-    	right: 0;
-    	width: 45.8%;
-    }
-    header h1 {
-    	position: fixed;
-    	top: 10rem;
-    	right: 2rem;
-      font-size: 12vw;
-      line-height: .8;
-      margin-top: 0;
-      text-align: center;
-      flex-direction: column;
-      color: black;
-      background: rgba(255, 255, 255, 0.8);
-      padding: 25px 8px;
-    }
-    header h1 span {
-      display: cover;
-      font-size: 8.75vw;
-    }
-    main {
-      background: #fff;
-      position: relative; }
-    @media all and (max-width: 400px) {
-      main { padding: 2rem; }
-    }
+ader img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45.8%;
+}
 
- /* end of paralax */
-/**/
+header h1 {
+  position: fixed;
+  top: 10rem;
+  right: 2rem;
+  font-size: 12vw;
+  line-height: .8;
+  margin-top: 0;
+  text-align: center;
+  flex-direction: column;
+  color: black;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 25px 8px;
+}
+
+header h1 span {
+  display: cover;
+  font-size: 8.75vw;
+}
+
+main {
+  background: #fff;
+  position: relative;
+}
+
+@media all and (max-width: 400px) {
+  main {
+    padding: 2rem;
+  }
+}
+
+/* end of paralax */
+/* Piano Page */
+/*puts padding on content*/
 .pcontent, .p24 {
   padding: 20px 20px;
 }
 
-/**/
+/*changes size and responsive*/
 .p21 {
   max-width: 95%;
   min-width: 90%;
 }
 
-/**/
-table, th, td {
-  text-align: center;
-  border-style: solid;
-  border-color: #b3b3b3;
-  padding: 10px;
-}
-
 /* end of piano  */
 /* vocal page */
-/**/
+/*adds padding to image*/
 .nextto {
   padding: 30px 30px;
 }
 
-/**/
+/*aligns content*/
 .vcontent {
   text-align: justify;
 }
 
 /* end of vocal */
 /* Theater arts page*/
-/**/
+/*adds padding to images*/
 .hands {
   padding: 30px 30px;
 }
 
-/**/
+/*adds padding to images*/
 .invoice {
   padding: 20px 20px;
 }
 
 /* end of theater arts */
 /* Summer Camps page */
-/**/
+/*adds padding to images*/
 .sccontent {
   padding: 20px 20px;
 }
 
-/**/
+/*adds padding to images*/
 .duck {
   padding: 20px 20px;
   min-width: 360px;
@@ -266,33 +258,34 @@ table, th, td {
 
 /* end of summer camps */
 /* Contact Page */
-/**/
+/*adds margins to page*/
 .ccontent {
   margin: 0px 50px;
 }
 
-/**/
+/*makes the line blue*/
 hr {
   background-color: #36b6f7;
 }
 
-/**/
+/*centers the list items, adds custom bullet points*/
 .hours {
   list-style-image: url(Media/eighthnote1.png);
   display: inline-block;
   text-align: left;
 }
 
-/**/
+/*centers the whole list*/
 .time {
   text-align: center;
 }
 
-/**/
+/*adds padding to map*/
 .map {
   padding: 20px 20px;
 }
 
+/*styles and adds responsiveness to dropdown*/
 .form-control {
   width: 25%;
   display: inline-block;
@@ -302,6 +295,7 @@ hr {
   border-style: groove;
 }
 
+/*centers dropdown*/
 .lesson {
   display: block;
 }
@@ -310,26 +304,33 @@ hr {
 /*Media query*/
 @media only screen and (max-width: 775px) {
 
-  /**/
+  /*resizes carousel*/
   .carousel-inner {
     max-height: 450px;
   }
+
+  /*moves headers*/
   header h1 {
     top: 8rem;
   }
-  /**/
+
+  /*resizes map*/
   .map {
     max-width: 75%;
     max-height: 250px;
   }
 
+  /*resizes comment box*/
   textarea {
     width: 90%;
   }
+
+  /*resizes dropdown*/
   .form-control {
     width: 60%;
   }
 
+  /*resizes logo in footer*/
   .footerlogo {
     width: 80%;
   }
