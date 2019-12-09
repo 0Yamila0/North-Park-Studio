@@ -203,9 +203,7 @@ footer {
     main {
       background: #fff;
       position: relative; }
-    @media all and (max-width: 400px) {
-      main { padding: 2rem; }
-    }
+  
 
  /* end of paralax */
 /**/
@@ -333,4 +331,9 @@ hr {
   .footerlogo {
     width: 80%;
   }
+}
+
+
+@media all and (max-width: 400px) {
+  main { padding: 2rem; }
 }
