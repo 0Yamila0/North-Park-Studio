@@ -5,7 +5,7 @@ Northpark Studio of the Arts is a local studio for teaching kids about the fine 
 Our website:  
 <br>
 <ul>
-  <li>We added parallax to every page except the home page. It makes the header animate to an extent and makes it a bit more interesting to look at.</li>
+  <li>We added parallax to every page except the home page. It makes the header scroll and hide behind the body of the page and makes it interesting to look at.</li>
   <li>It is easy to navigate with obvious call to actions. The navbar is at the top and there are links throughout the website to take you to other pages to view certain content or sign up. The links also stand out from the page and tell you what to do</li>
   <li>We explain all information thoroughly and have the option to find more information if there are any more questions.</li>
   <li>The website has plenty of information to inform parents about the establishment.</li>
