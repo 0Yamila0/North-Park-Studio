@@ -1,6 +1,6 @@
 # North-Park-Studio
 
-Northpark Studio of the Arts is a local studio for teaching kids about the fine arts. The owner of the establishment, Mrs. Deborah, founded the studio in 2018 and teaches lessons there along with other teachers. She was more than happy to let us build a website for her, even though she already has one, and provided us with media and information. This website was built by Yamila Diaz, Janaki Patel, and Sarah Daniels. We attend Madison Academic Magnet high school. We built our website for parents to find a warm and welcoming place for their child to learn about fine arts.
+Northpark Studio of the Arts is a local studio for teaching kids about the fine arts. The owner of the establishment, Mrs. Deborah, founded the studio in 2018 and teaches lessons there along with other teachers. She was more than happy to let us build a website for her, even though she already has one, and provided us with media and information. This website was built by Yamila Diaz, Janaki Patel, and Sarah Daniels, and we attend Madison Academic Magnet high school. We built our website for parents to find a warm and welcoming place for their child to learn about fine arts.
 <hr>
 Our website:  
 <br>
